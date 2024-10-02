@@ -1,11 +1,15 @@
-import './App.css'
+import './App.css';
+import Header from './components/Header';
 
 function App() {
 
   return (
-    <>
-      <h1>Lutong Bahay</h1>
-    </>
+    <div className='app'>
+      <Header />
+      This is the HOME PAGE
+      <br />
+      <a href={`/Testing`}>Link to Testing Page</a>
+    </div>
   )
 }
 

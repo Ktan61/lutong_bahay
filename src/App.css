@@ -1,3 +1,44 @@
+:root {
+  --black: #1A1D1A;
+  --red: #A11015;
+  --orange: #E98704;
+  --yellow: #F0AB1A;
+  --blue: #10254E;
+  --cream: #FEF8EF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap'); 
+
+h1 {
+  font-family: 'Berkshire Swash', cursive;
+  font-weight: 100;
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -40,3 +81,4 @@
 .read-the-docs {
   color: #888;
 }
+*/
