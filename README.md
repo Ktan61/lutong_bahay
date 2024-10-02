@@ -10,3 +10,10 @@ Shows different Filipino recipes with: instructions, ingredients, videos/picture
 Allows users to change portion sizes and substitute ingredients based on dietary preferences. Changing portion sizes/dietary preferences will be chips on the page that you can toggle to change the information.
 Users can add ingredients to shopping list by pressing a button. The shopping list will be visible on another page. 
 We provide suggestions where to get specialty ingredients. Specialty items will have an icon that links to information on stores that provide these items, based on admin’s knowledge.
+
+## Packages Installed
+- react-router-dom
+- Material UI
+    - @mui/material @emotion/react @emotion/styled
+    - @mui/icons-material
+- fontsource (Berkshire Swash, Roboto)

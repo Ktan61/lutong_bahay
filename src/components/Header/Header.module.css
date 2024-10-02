@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cream);
+    padding: 1.5rem;
+}
+
+.header h1 {
+    width: 70%;
+    text-align: center;
+    color: var(--yellow);
+}
+
+.header .spacer {
+    width: 20%;
+}
+
+.header .search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    max-width: 200px;
+    height: 1.6rem;
+    margin: 0 1rem;
+    background-color: white;
+    border: var(--black) 1px solid;
+    border-radius: 5px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding-left: 10px;
+    margin: 0;
+    height: 1.3rem;
+    width: 120px;
+}
