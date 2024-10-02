@@ -1,0 +1,19 @@
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    background-color: var(--orange);
+}
+
+.linksList {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.linksList a {
+    color: var(--cream);
+    text-decoration: none;
+}
+
