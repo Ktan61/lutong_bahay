@@ -1,0 +1,32 @@
+.recipeCategory {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 10px;
+    text-align: center;
+}
+
+.categoryImage img {
+    width: 100px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.categoryName {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.browseRecipes {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.browseRecipes:hover {
+    background-color: #0056b3;
+}
