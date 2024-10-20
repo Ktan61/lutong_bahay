@@ -1,5 +1,5 @@
 body {
-    background-color: #F2EBE0;
+    background-color: #E98704;
    }
 
 .recipes {
@@ -24,12 +24,11 @@ body {
 
 .textSection {
     flex: 1; 
-    background-color: #F0AB1A; 
+    background-color: #10254E; 
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
-    padding: 30px;
-    color: black;
+    padding: 30px; 
 }
 
 .imageSection {

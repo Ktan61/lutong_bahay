@@ -1,0 +1,58 @@
+.recipes {
+    padding: 20px;
+    margin: 16px 240px 0px 240px; /* Keep your margins */
+    padding-bottom: 32px;
+}
+
+.name{
+    font-size: 65px;
+}
+
+.feature {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out text and image */
+    align-items: stretch; /* Make items stretch to the same height */
+    align-content: center;
+}
+
+.textSection {
+    flex: 1; /* Allow text section to take available space */
+    background-color: #A11015; /* Background color for visibility */
+    display: flex; /* Use flexbox to align content within */
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center content vertically */
+    padding: 16px; /* Add some padding inside the text section */
+    color: #FEF8EF;
+}
+
+.imageSection {
+    flex: 1; /* Allow image section to take available space */
+}
+
+.featureImage {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Scale to fill the container */
+}
+
+.viewRecipe {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #F0AB1A;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.viewRecipe:hover {
+    background-color: #0056b3; /* Darker button on hover */
+}
+
+.recipesGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    gap: 16px; /* Space between cards */
+    padding: 16px; /* Padding around the grid */
+}

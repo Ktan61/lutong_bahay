@@ -1,0 +1,63 @@
+.recipes {
+    padding: 20px;
+    margin: 16px 240px 0px 240px; /* Keep your margins */
+    padding-bottom: 32px;
+}
+
+.name {
+    font-size: 65px;
+    margin-top: 0px; /* Adjust the top margin to reduce space */
+    margin-bottom: 10; /* Remove bottom margin to keep it tight */
+}
+
+.feature {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out text and image */
+    align-items: stretch; /* Make items stretch to the same height */
+    align-content: center;
+}
+
+.textSection {
+    flex: 1; /* Allow text section to take available space */
+    background-color: #F0AB1A; /* Background color for visibility */
+    display: flex; /* Use flexbox to align content within */
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center content vertically */
+    padding: 16px; /* Add some padding inside the text section */
+    padding-left: 20px;
+}
+
+.imageSection {
+    flex: 1; /* Allow image section to take available space */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center the image vertically */
+}
+
+.featureImage {
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Maintain aspect ratio */
+    object-fit: cover; /* Scale to fill the container */
+}
+
+.viewRecipe {
+    margin-top: 10px; /* Add space above the button */
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #A11015; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-weight: bold; /* Bold font for button */
+    width: auto; /* Set width to auto to prevent stretching */
+}
+
+.viewRecipe:hover {
+    background-color: #8F080D; /* Darker button on hover */
+}
+
+.recipesGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    gap: 16px; /* Space between cards */
+    padding: 16px; /* Padding around the grid */
+}

@@ -48,7 +48,7 @@ body {
     margin-top: 10px; 
     padding: 10px 20px; 
     background-color: #A11015; 
-    color: white; 
+    color: black; 
     border: none; 
     border-radius: 20px; 
     cursor: pointer; 
@@ -58,7 +58,7 @@ body {
 }
 
 .viewRecipe:hover {
-    background-color: #8F080D; 
+    background-color: #F0AB1A; 
 }
 
 .recipesGrid {

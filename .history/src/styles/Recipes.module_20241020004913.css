@@ -12,7 +12,7 @@ body {
     font-size: 80px;
     margin-top: 0px; 
     margin-bottom: 10; 
-    color: #A11015;
+    color: #F0AB1A;
 }
 
 .feature {
@@ -24,12 +24,12 @@ body {
 
 .textSection {
     flex: 1; 
-    background-color: #F0AB1A; 
+    background-color: #10254E; 
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
     padding: 30px;
-    color: black;
+    color: #F0AB1A;
 }
 
 .imageSection {
@@ -47,8 +47,8 @@ body {
 .viewRecipe {
     margin-top: 10px; 
     padding: 10px 20px; 
-    background-color: #A11015; 
-    color: white; 
+    background-color: #F0AB1A; 
+    color: black; 
     border: none; 
     border-radius: 20px; 
     cursor: pointer; 
@@ -58,7 +58,7 @@ body {
 }
 
 .viewRecipe:hover {
-    background-color: #8F080D; 
+    background-color: #F0AB1A; 
 }
 
 .recipesGrid {
