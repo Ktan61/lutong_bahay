@@ -38,7 +38,7 @@ export default function Sinigang() {
             "lime juice optional for more sourness",
             "0.5 finger chile pepper optional for spiciness",
             "15 stems kang kong / water spinach / on choy",
-            "2\" daikon radish cut in ¼\" slices; cut into half rounds"
+            "2 inches daikon radish cut in ¼\" slices, then cut into half rounds"
         ],
         equipment: [
             "stainless steel strainer",
@@ -78,69 +78,57 @@ export default function Sinigang() {
                 </div>
                 <div className={styles.ingredientsSection}>
                     <h1 className={styles.ingredientsLabel}>Ingredients</h1>
-                    
                     <div className={styles.ingredientsList}>
-    <div >
-        <h4>Sinigang</h4>
-        <ul className={styles.sinigangList}>
-            {ingredients.sinigang.map((ingredient, index) => (
-                <li key={index}>
-                    <label className={styles.customCheckbox}>
-                        <input 
-                            type="checkbox" 
-                            checked={!!checkedIngredients[ingredient]} 
-                            onChange={() => handleCheckboxChange(ingredient)} 
-                        />
-                        <span className={styles.checkmark}></span>
-                        {ingredient}
-                    </label>
-                </li>
-            ))}
-        </ul>
-    </div>
-
-    <div >
-        <h4>Vegetables</h4>
-        <ul className={styles.sinigangList}>
-    {ingredients.vegetables.map((ingredient, index) => (
-        <li key={index}>
-            <label className={styles.customCheckbox}>
-                <input 
-                    type="checkbox" 
-                    checked={!!checkedIngredients[ingredient]} 
-                    onChange={() => handleCheckboxChange(ingredient)} 
-                />
-                <span className={styles.checkmark}></span>
-                {ingredient}
-            </label>
-        </li>
-    ))}
-</ul>
-    </div>
-
-    <div >
-        <h4>Equipment Used</h4>
-        <ul className={styles.sinigangList}>
-            {ingredients.equipment.map((ingredient, index) => (
-                <li key={index}>
-                    <label className={styles.customCheckbox}>
-                        <input 
-                            type="checkbox" 
-                            checked={!!checkedIngredients[ingredient]} 
-                            onChange={() => handleCheckboxChange(ingredient)} 
-                        />
-                        <span className={styles.checkmark}></span>
-                        {ingredient}
-                    </label>
-                </li>
-            ))}
-        </ul>
-    </div>
-</div>
-
-
+                        {/* Sinigang Ingredients */}
+                        <div className={styles.sinigangList}>
+                            <h4>Sinigang</h4>
+                            <ul>
+                                {ingredients.sinigang.map((ingredient, index) => (
+                                    <li key={index}>
+                                        <input 
+                                            type="checkbox" 
+                                            checked={!!checkedIngredients[ingredient]} 
+                                            onChange={() => handleCheckboxChange(ingredient)} 
+                                        />
+                                        {ingredient}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        {/* Vegetables */}
+                        <div className={styles.sinigangList}>
+                            <h4>Vegetables</h4>
+                            <ul>
+                                {ingredients.vegetables.map((ingredient, index) => (
+                                    <li key={index}>
+                                        <input 
+                                            type="checkbox" 
+                                            checked={!!checkedIngredients[ingredient]} 
+                                            onChange={() => handleCheckboxChange(ingredient)} 
+                                        />
+                                        {ingredient}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        {/* Equipment */}
+                        <div className={styles.sinigangList}>
+                            <h4>Equipment Used</h4>
+                            <ul>
+                                {ingredients.equipment.map((ingredient, index) => (
+                                    <li key={index}>
+                                        <input 
+                                            type="checkbox" 
+                                            checked={!!checkedIngredients[ingredient]} 
+                                            onChange={() => handleCheckboxChange(ingredient)} 
+                                        />
+                                        {ingredient}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                
                 <div className={styles.stepsSection}>
                     <h1 className={styles.stepsLabel}>Instructions</h1>
                     <div className={styles.stepsDetails}>
@@ -157,14 +145,13 @@ export default function Sinigang() {
                                 <li>In the same pot, add the onions and sauté for about one minute or until the onions are slightly translucent. Add the garlic and sauté for 30 seconds or until it's fragrant.</li>
                                 <li>Add 2 cups of filtered water to deglaze the pot thoroughly. Gently scrape the golden brown parts from the searing meat at the bottom of the pan.</li>
                                 <li>Add the meat back to the pot with only 4 tomatoes (reserve the 5th one for later). Add 2 tablespoons of salt and stir to dissolve.</li>
-                                
+                                <li>Add 6 cups of water or enough so the meat is completely submerged. Bring the heat up to medium-high heat, once the liquid hits a boil let it boil for about 30 seconds.</li>
                             </ol>
                         </div>
                         <div className={styles.stepsColumns}>
-                            <ol start={6}>
-                            <li>Add 6 cups of water or enough so the meat is completely submerged. Bring the heat up to medium-high heat, once the liquid hits a boil let it boil for about 30 seconds.</li>
+                            <ol>
                                 <li>Drop the heat to a simmer (about medium-low heat) and simmer for about 45 minutes to 1 hour or until the meat is tender to your liking.</li>
-                                <li>Add the tamarind paste, pepper, and fish sauce to the pot and stir. <br/>
+                                <li>Add the tamarind paste, pepper, and fish sauce to the pot and stir.
                                     <img 
                                         src="https://www.hungryhuy.com/wp-content/uploads/adding-tamarind-paste.jpg"
                                         alt="Adding in the tamarind paste" 
@@ -177,8 +164,6 @@ export default function Sinigang() {
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </>
     );

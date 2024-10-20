@@ -1,0 +1,12 @@
+.sinigang {
+    padding: 20px;
+    margin: 16px 240px 0px 240px; 
+    padding-bottom: 32px;
+
+}
+
+.banener {
+    display: flex; 
+    align-items: stretch; 
+    align-content: center;
+}

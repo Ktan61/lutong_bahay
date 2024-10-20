@@ -63,18 +63,18 @@
 
 .sinigangList li {
     display: flex; /* Use flexbox for layout */
-    align-items: center; /* Align checkbox and text at the start */
+    align-items: flex-start; /* Align checkbox and text at the start */
     margin-bottom: 10px; /* Space between items */
     flex-wrap: wrap; /* Allow the text to wrap to the next line */
 }
 
 h4 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .ingredientsList input[type="checkbox"] {
     margin-right: 10px; /* Add some space between the checkbox and the text */
-    flex-shrink: 0;
+
 }
 
 .stepsDetails {
@@ -111,7 +111,7 @@ h4 {
 
 .customCheckbox {
     display: flex; /* Use flexbox for the checkbox label */
-    align-items: center; /* Align the checkbox and text at the start */
+    align-items: flex-start; /* Align the checkbox and text at the start */
     cursor: pointer; /* Makes the label clickable */
     width: 100%; /* Use full width for proper wrapping */
 }

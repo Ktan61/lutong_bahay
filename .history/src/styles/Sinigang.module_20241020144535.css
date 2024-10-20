@@ -62,19 +62,19 @@
 }
 
 .sinigangList li {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Align checkbox and text at the start */
-    margin-bottom: 10px; /* Space between items */
-    flex-wrap: wrap; /* Allow the text to wrap to the next line */
+    list-style: none;
+    padding: 5px;
+    display: flex; /* Flexbox for proper alignment */
+    align-items: flex-start; /* Align items at the start */
 }
 
 h4 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .ingredientsList input[type="checkbox"] {
     margin-right: 10px; /* Add some space between the checkbox and the text */
-    flex-shrink: 0;
+
 }
 
 .stepsDetails {
@@ -91,7 +91,7 @@ h4 {
 }
 
 .stepsImage {
-    width: 350px; /* Make the image take the full width of its container */
+    width: 300px; /* Make the image take the full width of its container */
     height: auto; /* Maintain aspect ratio */
     margin: 10px 0; /* Add some margin above and below the image */
     object-fit: fill; /* Ensure the image covers the space without stretching */
@@ -110,10 +110,10 @@ h4 {
 }
 
 .customCheckbox {
-    display: flex; /* Use flexbox for the checkbox label */
-    align-items: center; /* Align the checkbox and text at the start */
+    display: flex;
+    align-items: flex-start; /* Align checkbox and text at the top */
     cursor: pointer; /* Makes the label clickable */
-    width: 100%; /* Use full width for proper wrapping */
+    max-width: calc(100% - 30px); /* Allow room for the checkbox */
 }
 
 .customCheckbox input {
@@ -128,8 +128,8 @@ h4 {
     margin-right: 10px; /* Space between checkbox and text */
     position: relative; /* Position for the pseudo-element */
     display: flex;
-    justify-content: center; /* Center checkmark */
-    align-items: center; /* Center checkmark */
+    justify-content: center;
+    align-items: center;
     transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
 }
 
