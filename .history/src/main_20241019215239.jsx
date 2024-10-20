@@ -1,10 +1,8 @@
-// main.jsx
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import App from "./App";
 import Testing from "./pages/Testing";
 import Recipes from "./pages/Recipes";
-import Sinigang from "./pages/Sinigang";
 import Forum from "./pages/Forum";
 import ShoppingList from "./pages/ShoppingList";
 import {
@@ -31,10 +29,6 @@ const router = createBrowserRouter([
     element: <Recipes />,
   },
   {
-    path: "/sinigang",
-    element: <Sinigang />,
-  },
-  {
     path: "/shoppinglist", 
     element: <ShoppingList />,
   },
@@ -45,3 +39,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
+

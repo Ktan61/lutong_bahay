@@ -32,7 +32,7 @@ export default function Recipes() {
                         <div className={styles.textSection}>
                             <p>Featured Recipe</p>
                             <h1 className={styles.name}>Sinigang <br /> na Baboy</h1>
-                            <Link to="/sinigang">
+                            <Link to="/Sinigang.jsx">
                                 <button className={styles.viewRecipe}>View Recipe</button>
                             </Link>
                         </div>
