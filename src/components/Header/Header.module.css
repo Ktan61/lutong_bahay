@@ -1,9 +1,9 @@
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--cream);
-    padding: 1.5rem;
+    padding: 1rem 12.5% 1rem 12.5%;
 }
 
 .header h1 {
@@ -22,7 +22,7 @@
     align-items: center;
     width: 20%;
     max-width: 200px;
-    height: 1.6rem;
+    height: 2rem;
     margin: 0 1rem;
     background-color: white;
     border: var(--black) 1px solid;
@@ -36,5 +36,10 @@
     padding-left: 10px;
     margin: 0;
     height: 1.3rem;
-    width: 120px;
+    width: 155px;
+}
+
+.personIcon {
+    margin-left: 1rem;
+    color: var(--orange);
 }
