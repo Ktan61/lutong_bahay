@@ -1,0 +1,52 @@
+{
+    "recipes": [
+      {
+        "name": "Sinigang",
+        "image": "/public/images_shoppingList/sinigang.png",
+        "altText": "pot of sinigang soup surrounded by ingredients",
+        "ingredients": [
+          ["medium yellow onion", "0.50"],
+          ["garlic cloves", "5"],
+          ["fish sauce", "5 tbsp", "specialty"],
+          ["tamarind paste", "0.38 c", "specialty"]
+        ]
+      },
+      {
+        "name": "Halo Halo",
+        "image": "/public/images_shoppingList/halohalo.png",
+        "altText": "bowl of tinola soup",
+        "ingredients": [
+          ["dark brown sugar", "2 cups"],
+          ["pineapple chunks", "4"],
+          ["evaporated milk", "1 can"],
+          ["tapioca pearls", "50 g", "specialty"],
+          ["pinipig", "1 cup", "specialty"],
+          ["pandan leaves", "3 leaves", "specialty"]
+        ]
+      },
+      {
+        "name": "Pancit Palabok",
+        "image": "/public/images_shoppingList/pancitpalabok.png",
+        "altText": "plate of pancit palabok",
+        "ingredients": [
+          ["shrimp", "0.20 kg"],
+          ["onion", "1"],
+          ["atsuete / annatto powder", "1 tbsp", "specialty"],
+          ["tinapa", "5 pcs", "specialty"],
+          ["bihon noodles", "1 pack", "specialty"]
+        ]
+      },
+      {
+        "name": "Tinola",
+        "image": "/public/images_shoppingList/tinola.png",
+        "altText": "two clear bowls of halo-halo dessert",
+        "ingredients": [
+          ["chicken", "0.75 kg"],
+          ["garlic cloves", "4"],
+          ["pechay / chinese cabbage", "2 bunch"],
+          ["fish sauce", "1 tbsp", "specialty"],
+          ["sayote", "1", "specialty"]
+        ]
+      }
+    ]
+}
