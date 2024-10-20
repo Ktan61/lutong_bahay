@@ -2,7 +2,7 @@
     "recipes": [
       {
         "name": "Sinigang",
-        "image": "/public/images_shoppingList/sinigang.png",
+        "image": "/images_shoppingList/sinigang.png",
         "altText": "pot of sinigang soup surrounded by ingredients",
         "ingredients": [
           ["medium yellow onion", "0.50"],
@@ -13,7 +13,7 @@
       },
       {
         "name": "Halo Halo",
-        "image": "/public/images_shoppingList/halohalo.png",
+        "image": "/images_shoppingList/halohalo.png",
         "altText": "bowl of tinola soup",
         "ingredients": [
           ["dark brown sugar", "2 cups"],
@@ -26,7 +26,7 @@
       },
       {
         "name": "Pancit Palabok",
-        "image": "/public/images_shoppingList/pancitpalabok.png",
+        "image": "/images_shoppingList/pancitpalabok.png",
         "altText": "plate of pancit palabok",
         "ingredients": [
           ["shrimp", "0.20 kg"],
@@ -38,7 +38,7 @@
       },
       {
         "name": "Tinola",
-        "image": "/public/images_shoppingList/tinola.png",
+        "image": "/images_shoppingList/tinola.png",
         "altText": "two clear bowls of halo-halo dessert",
         "ingredients": [
           ["chicken", "0.75 kg"],
