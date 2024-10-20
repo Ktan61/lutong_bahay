@@ -9,7 +9,7 @@ export default function Header() {
     return (
         <>
         <div className={styles.header}>
-            <img src={'../public/LH_templogo.svg'} alt={'lutong bahay temporary logo'} width={115} height={115} className={styles.logo} />
+            <img src={'/LH_templogo.svg'} alt={'lutong bahay temporary logo'} width={115} height={115} className={styles.logo} />
             <Navigation />
             <div className={styles.search}>
                 <input type="text" />
