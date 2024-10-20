@@ -1,0 +1,19 @@
+.sinigang {
+    padding: 20px;
+    margin: 16px 240px 0px 240px; 
+    padding-bottom: 32px;
+
+}
+
+.banener {
+    align-content: center;
+}
+
+.keyInfo {
+    display: flex;
+    flex-direction: row;
+}
+
+.infoChips {
+    gap: 10px;
+}

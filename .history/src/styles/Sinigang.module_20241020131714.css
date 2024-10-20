@@ -1,0 +1,58 @@
+.sinigangPage {
+    padding: 20px;
+    margin: 16px 240px 0px 240px; 
+    padding-bottom: 32px;
+
+}
+
+.banner {
+    align-content: center;
+}
+
+.keyInfo {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.infoChips {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid #F0AB1A;
+}
+
+.name {
+    font-size: 50px;
+    margin-top: 10px; 
+    margin-bottom: 10; 
+    color: #A11015;
+}
+
+.ingredientsLabel {
+    color: #F0AB1A;
+    margin-top: 20px;
+    padding-top: 30px;
+}
+
+.ingredientsList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 16px; 
+}
+
+.sinigangList {
+    column-gap: 20px;
+}
+
+.sinigangList li{
+    list-style: none;
+    padding: 5px;
+}
+
+h4 {
+    margin-bottom: 10px;
+}

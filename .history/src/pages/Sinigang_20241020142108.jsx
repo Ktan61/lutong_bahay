@@ -38,7 +38,7 @@ export default function Sinigang() {
             "lime juice optional for more sourness",
             "0.5 finger chile pepper optional for spiciness",
             "15 stems kang kong / water spinach / on choy",
-            "2\" daikon radish cut in ¼\" slices; cut into half rounds"
+            "2 inches daikon radish cut in ¼\" slices, then cut into half rounds"
         ],
         equipment: [
             "stainless steel strainer",
@@ -78,67 +78,56 @@ export default function Sinigang() {
                 </div>
                 <div className={styles.ingredientsSection}>
                     <h1 className={styles.ingredientsLabel}>Ingredients</h1>
-                    
                     <div className={styles.ingredientsList}>
-    <div >
-        <h4>Sinigang</h4>
-        <ul className={styles.sinigangList}>
-            {ingredients.sinigang.map((ingredient, index) => (
-                <li key={index}>
-                    <label className={styles.customCheckbox}>
-                        <input 
-                            type="checkbox" 
-                            checked={!!checkedIngredients[ingredient]} 
-                            onChange={() => handleCheckboxChange(ingredient)} 
-                        />
-                        <span className={styles.checkmark}></span>
-                        {ingredient}
-                    </label>
-                </li>
-            ))}
-        </ul>
-    </div>
-
-    <div >
-        <h4>Vegetables</h4>
-        <ul className={styles.sinigangList}>
-    {ingredients.vegetables.map((ingredient, index) => (
-        <li key={index}>
-            <label className={styles.customCheckbox}>
-                <input 
-                    type="checkbox" 
-                    checked={!!checkedIngredients[ingredient]} 
-                    onChange={() => handleCheckboxChange(ingredient)} 
-                />
-                <span className={styles.checkmark}></span>
-                {ingredient}
-            </label>
-        </li>
-    ))}
-</ul>
-    </div>
-
-    <div >
-        <h4>Equipment Used</h4>
-        <ul className={styles.sinigangList}>
-            {ingredients.equipment.map((ingredient, index) => (
-                <li key={index}>
-                    <label className={styles.customCheckbox}>
-                        <input 
-                            type="checkbox" 
-                            checked={!!checkedIngredients[ingredient]} 
-                            onChange={() => handleCheckboxChange(ingredient)} 
-                        />
-                        <span className={styles.checkmark}></span>
-                        {ingredient}
-                    </label>
-                </li>
-            ))}
-        </ul>
-    </div>
-</div>
-
-
+                        {/* Sinigang Ingredients */}
+                        <div className={styles.sinigangList}>
+                            <h4>Sinigang</h4>
+                            <ul>
+                                {ingredients.sinigang.map((ingredient, index) => (
+                                    <li key={index}>
+                                        <input 
+                                            type="checkbox" 
+                                            checked={!!checkedIngredients[ingredient]} 
+                                            onChange={() => handleCheckboxChange(ingredient)} 
+                                        />
+                                        {ingredient}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        {/* Vegetables */}
+                        <div className={styles.sinigangList}>
+                            <h4>Vegetables</h4>
+                            <ul>
+                                {ingredients.vegetables.map((ingredient, index) => (
+                                    <li key={index}>
+                                        <input 
+                                            type="checkbox" 
+                                            checked={!!checkedIngredients[ingredient]} 
+                                            onChange={() => handleCheckboxChange(ingredient)} 
+                                        />
+                                        {ingredient}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        {/* Equipment */}
+                        <div className={styles.sinigangList}>
+                            <h4>Equipment Used</h4>
+                            <ul>
+                                {ingredients.equipment.map((ingredient, index) => (
+                                    <li key={index}>
+                                        <input 
+                                            type="checkbox" 
+                                            checked={!!checkedIngredients[ingredient]} 
+                                            onChange={() => handleCheckboxChange(ingredient)} 
+                                        />
+                                        {ingredient}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 
                 <div className={styles.stepsSection}>

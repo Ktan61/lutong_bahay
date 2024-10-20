@@ -52,8 +52,11 @@
 }
 
 .sinigangList {
+    align-items: center; /* Center vertically */
     margin-bottom: 10px; /* Space between items */
-    flex-wrap: wrap; /* Allow wrapping for the list items */
+    white-space: nowrap; /* Prevent wrapping of text */
+    overflow: visible; /* Hide overflowed text */
+    text-overflow: wrap;
 }
 
 .sinigangList ul {
@@ -61,20 +64,18 @@
     padding: 0; /* Remove default padding */
 }
 
-.sinigangList li {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Align checkbox and text at the start */
-    margin-bottom: 10px; /* Space between items */
-    flex-wrap: wrap; /* Allow the text to wrap to the next line */
+.sinigangList li{
+    list-style: none;
+    padding: 5px;
 }
 
 h4 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .ingredientsList input[type="checkbox"] {
     margin-right: 10px; /* Add some space between the checkbox and the text */
-    flex-shrink: 0;
+
 }
 
 .stepsDetails {
@@ -91,7 +92,7 @@ h4 {
 }
 
 .stepsImage {
-    width: 350px; /* Make the image take the full width of its container */
+    width: 300px; /* Make the image take the full width of its container */
     height: auto; /* Maintain aspect ratio */
     margin: 10px 0; /* Add some margin above and below the image */
     object-fit: fill; /* Ensure the image covers the space without stretching */
@@ -110,10 +111,9 @@ h4 {
 }
 
 .customCheckbox {
-    display: flex; /* Use flexbox for the checkbox label */
-    align-items: center; /* Align the checkbox and text at the start */
+    display: flex;
+    align-items: center;
     cursor: pointer; /* Makes the label clickable */
-    width: 100%; /* Use full width for proper wrapping */
 }
 
 .customCheckbox input {
@@ -125,11 +125,11 @@ h4 {
     height: 20px; /* Height of the checkbox */
     border: 2px solid #F0AB1A; /* Border color */
     border-radius: 4px; /* Rounded corners */
-    margin-right: 10px; /* Space between checkbox and text */
+    margin-right: 20px; /* Space between checkbox and text */
     position: relative; /* Position for the pseudo-element */
     display: flex;
-    justify-content: center; /* Center checkmark */
-    align-items: center; /* Center checkmark */
+    justify-content: center;
+    align-items: left;
     transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
 }
 

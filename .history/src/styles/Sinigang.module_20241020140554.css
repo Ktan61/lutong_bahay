@@ -1,0 +1,89 @@
+.sinigangPage {
+    padding: 20px;
+    margin: 16px 240px 0px 240px; 
+    padding-bottom: 32px;
+}
+
+.banner {
+    flex: 1; 
+    display: flex; 
+    align-items: center; 
+}
+
+.bannerImage {
+    width: 100%; 
+    height: 100%; 
+    object-fit: fill; 
+}
+
+.keyInfo {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.infoChips {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid #F0AB1A;
+}
+
+.name {
+    font-size: 50px;
+    margin-top: 10px; 
+    margin-bottom: 10; 
+    color: #A11015;
+}
+
+.ingredientsLabel {
+    color: #F0AB1A;
+    margin-top: 20px;
+    padding-top: 30px;
+}
+
+.ingredientsList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 16px; 
+}
+
+.sinigangList {
+    column-gap: 20px;
+}
+
+.sinigangList li{
+    list-style: none;
+    padding: 5px;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+.ingredientsList input[type="checkbox"] {
+    margin-right: 10px; /* Add some space between the checkbox and the text */
+}
+
+.stepsDetails {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    gap: 20px; 
+    padding: 16px; 
+}
+
+.stepsColumns {
+    display: flex; /* Use flexbox for inner content */
+    flex-direction: column; /* Align items vertically */
+}
+
+.stepsImage {
+    width: 100%; /* Make the image take the full width of its container */
+    max-width: 300px; /* Set a max width for images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px 0; /* Add some margin above and below the image */
+    object-fit: cover; /* Ensure the image covers the space without stretching */
+}
