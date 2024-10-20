@@ -23,9 +23,8 @@ const CATEGORY = [
 
 export default function Recipes() {
     return (
-        <>
+        <main>
             <Header />
-            <body>
             <div className={styles.recipes}>
                 <div className={styles.feature}>
                     <div className={styles.textSection}>
@@ -48,7 +47,6 @@ export default function Recipes() {
                     ))}
                 </div>
             </div>
-            </body>
-        </>
+        </main>
     );
 }

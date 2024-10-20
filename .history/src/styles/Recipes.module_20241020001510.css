@@ -1,6 +1,4 @@
-body {
-    background-color: #F2EBE0;
-   }
+
 
 .recipes {
     padding: 20px;
@@ -28,8 +26,7 @@ body {
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
-    padding: 30px;
-    color: black;
+    padding: 30px; 
 }
 
 .imageSection {

@@ -23,14 +23,13 @@ const CATEGORY = [
 
 export default function Recipes() {
     return (
-        <>
+        <main>
             <Header />
-            <body>
             <div className={styles.recipes}>
                 <div className={styles.feature}>
                     <div className={styles.textSection}>
                         <p>Featured Recipe</p>
-                        <h1 className={styles.name}>Sinigang <br /> na Baboy</h1>
+                        <h2>Sinigang na Baboy</h2>
                         <button className={styles.viewRecipe}>View Recipe</button>
                     </div>
                     <div className={styles.imageSection}>
@@ -41,14 +40,13 @@ export default function Recipes() {
                         />
                     </div>
                 </div>
-                <h1 className={styles.headingCat}>Our Categories</h1>
+                <h2>This is the RECIPES</h2>
                 <div className={styles.recipesGrid}>
                     {CATEGORY.map((category, index) => (
                         <RecipesCard key={index} category={category} />
                     ))}
                 </div>
             </div>
-            </body>
-        </>
+        </main>
     );
 }

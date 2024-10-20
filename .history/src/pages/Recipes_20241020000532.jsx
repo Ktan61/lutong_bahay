@@ -25,7 +25,7 @@ export default function Recipes() {
     return (
         <>
             <Header />
-            <body>
+            <main>
             <div className={styles.recipes}>
                 <div className={styles.feature}>
                     <div className={styles.textSection}>
@@ -48,7 +48,7 @@ export default function Recipes() {
                     ))}
                 </div>
             </div>
-            </body>
+            </main>
         </>
     );
 }

@@ -1,0 +1,57 @@
+.recipes {
+    padding: 20px;
+    margin: 16px 240px 0px 240px;
+    padding-bottom: 32px;
+}
+
+.feature {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out text and image */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 32px; /* Space below the feature section */
+}
+
+.textSection {
+    flex: 1; /* Allow text section to take available space */
+    margin-right: 16px; /* Space between text and image */
+    background-color: #F0AB1A;
+}
+
+.imageSection {
+    flex: 1; /* Allow image section to take available space */
+    width: 50%;
+}
+
+.featureImage {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the space nicely */
+
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Scale to fill the container */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    padding-bottom: 10px;
+}
+
+.viewRecipe {
+    margin-top: 10px; /* Add space above the button */
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.viewRecipe:hover {
+    background-color: #0056b3; /* Darker button on hover */
+}
+
+.recipesGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    gap: 16px; /* Space between cards */
+    padding: 16px; /* Padding around the grid */
+}

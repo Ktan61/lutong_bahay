@@ -1,5 +1,5 @@
 body {
-    background-color: #F2EBE0;
+    background-color: #E98704;
    }
 
 .recipes {
@@ -28,8 +28,7 @@ body {
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
-    padding: 30px;
-    color: black;
+    padding: 30px; 
 }
 
 .imageSection {

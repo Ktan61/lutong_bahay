@@ -1,5 +1,5 @@
 .recipeCategory {
-    /* border: 1px solid #ccc;*/
+    border: 1px solid #ccc;
     border-radius: 8px;
     padding: 10px;
     text-align: center;
@@ -11,24 +11,22 @@
     justify-content: center; 
     align-items: center; 
     height: 200px; 
-    overflow: hidden;
+    overflow: hidden; 
 }
 
 .thumbnail {
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    top: 0; 
-    left: 0; 
-    padding-bottom: 10px;
-    
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Scale to fill the container */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
 }
 
 .categoryName {
+    padding-top: 20px;
     font-weight: bold;
     font-size: 20px;
     font-family: 'Koulen', sans-serif;
-    color: #A11015;
 }
 
 .browseRecipes {
