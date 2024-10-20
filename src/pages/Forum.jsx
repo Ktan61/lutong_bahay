@@ -3,6 +3,8 @@ import Editor from "../components/Post/index.jsx";
 import Output from "../components/Post/output.jsx";
 import styles from "../styles/Forum.module.css";
 import Chips from "../components/Chips/index.jsx";
+import Heart from '../components/Icons/Heart.jsx';
+import Save from '../components/Icons/Save.jsx';
 
 export default function Forum() {
     return(
@@ -29,7 +31,14 @@ export default function Forum() {
                             <Chips text="Popular"/>
                         </div>
                         <div className={styles.sections}>
-
+                            <div className={styles.section}>
+                                <Heart className={styles.heart}/>
+                                <button>Liked</button>
+                            </div>
+                            <div className={styles.section}>
+                                <Save className={styles.save}/>
+                                <button>Saved</button>
+                            </div>
                         </div>
                     </div>
                     <div className={styles.postContainer}>

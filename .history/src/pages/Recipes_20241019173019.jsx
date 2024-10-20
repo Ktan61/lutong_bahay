@@ -23,7 +23,7 @@ const CATEGORY = [
 
 export default function Recipes() {
     return (
-        <div className={styles.recipes}>
+        <div>
             <Header />
             <h2>This is the RECIPES</h2>
             <div className={styles.recipesGrid}>

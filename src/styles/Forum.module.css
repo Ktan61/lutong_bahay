@@ -4,12 +4,13 @@
 }
 
 .forumContainer{
-    margin: 16px 240px;
+    margin: 16px 240px 0px 240px;
+    padding-bottom: 32px;
 }
 
 .forumContent {
     background-color: var(--cream);
-    border-radius: 15px;
+    border-radius: 10px;
     display: flex;
     padding: 32px;
 }
@@ -47,4 +48,44 @@
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
+    margin: 32px 0px;
+    border-bottom: solid;
+    padding-bottom: 32px;
+}
+
+.section > button {
+    border: none;
+    background-color: var(--cream);
+    font-weight: 700;
+    color: var(--red);
+    font-size: 16px;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    padding-bottom: 10rem;
+}
+
+.heart {
+    height: 24px;
+    color: var(--red);
+}
+
+.save {
+    height: 24px;
+    width: 24px;
+    color: var(--red);
+}
+
+.section {
+    display: flex;
+    gap: 8px;
+}
+
+h1 {
+    color: var(--cream);
+    margin: 32px 0px 16px 0px;
 }
