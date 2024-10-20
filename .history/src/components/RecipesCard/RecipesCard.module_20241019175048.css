@@ -1,0 +1,44 @@
+.recipesGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns */
+    gap: 16px; /* Space between cards */
+    padding: 16px; /* Padding around the grid */
+}
+
+.recipeCategory {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    background-color: #fff; /* Optional: background color for better visibility */
+}
+
+.categoryImage {
+    height: 100px; /* Fixed height for thumbnail */
+    overflow: hidden; /* Hide overflow */
+}
+
+.thumbnail {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.categoryName {
+    font-weight: bold;
+    font-size: 1rem; /* Slightly smaller font size for better fit */
+}
+
+.browseRecipes {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #F0AB1A;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.browseRecipes:hover {
+    background-color: #DB9400;
+}

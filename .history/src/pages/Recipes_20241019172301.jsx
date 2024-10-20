@@ -1,6 +1,5 @@
 import Header from '../components/Header/index.jsx';
 import RecipesCard from '../components/RecipesCard/index.jsx';
-import styles from '../styles/Recipes.module.css'; 
 
 const CATEGORY = [
     {
@@ -23,7 +22,7 @@ const CATEGORY = [
 
 export default function Recipes() {
     return (
-        <div className={styles.recipes}>
+        <div>
             <Header />
             <h2>This is the RECIPES</h2>
             <div className={styles.recipesGrid}>

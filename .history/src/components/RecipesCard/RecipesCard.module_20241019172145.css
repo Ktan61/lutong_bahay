@@ -1,0 +1,7 @@
+.recipesGrid {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of cards */
+    justify-content: space-between; /* Distributes space evenly */
+    max-width: 1000px; /* Limit the width of the grid */
+    margin: 0 auto; /* Center the grid */
+}
