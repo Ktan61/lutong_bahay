@@ -21,7 +21,7 @@
           ["evaporated milk", "1 can"],
           ["tapioca pearls", "50 g", "specialty"],
           ["pinipig", "1 cup", "specialty"],
-          ["pandan leaves", "3 leaves", "specialty"]
+          ["pandan leaves", "3", "specialty"]
         ]
       },
       {
@@ -31,7 +31,7 @@
         "ingredients": [
           ["shrimp", "0.20 kg"],
           ["onion", "1"],
-          ["atsuete / annatto powder", "1 tbsp", "specialty"],
+          ["atsuete/annatto", "1 tbsp", "specialty"],
           ["tinapa", "5 pcs", "specialty"],
           ["bihon noodles", "1 pack", "specialty"]
         ]
@@ -43,7 +43,7 @@
         "ingredients": [
           ["chicken", "0.75 kg"],
           ["garlic cloves", "4"],
-          ["pechay / chinese cabbage", "2 bunch"],
+          ["pechay", "2 bunches"],
           ["fish sauce", "1 tbsp", "specialty"],
           ["sayote", "1", "specialty"]
         ]

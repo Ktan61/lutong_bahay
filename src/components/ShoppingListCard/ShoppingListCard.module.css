@@ -1,7 +1,7 @@
 .container {
     flex-basis: calc(33.33% - 2rem); 
     flex-grow: 1;
-    max-width: 515px; 
+    max-width: 30%; 
     height: auto; 
     background-color: var(--cream);
     border: var(--yellow) solid 8px;
@@ -85,6 +85,8 @@
 .ingredientsLeft{
     display: flex;
     justify-content: center;
+    font-family: "Poppins", sens-serif;
+    font-size: 0.8rem;
 }
 
 .checkbox{
@@ -93,11 +95,15 @@
 
 .ingredientName{}
 
-.ingredientAmount{}
+.ingredientAmount{
+    font-family: "Poppins", sens-serif;
+    font-size: 0.8rem;
+}
 
 .specialtyIcon{
     color: var(--blue);
-    padding-left: 0.5rem;
-    padding-top: 0.8rem;
+    padding-left: 0rem;
+    padding-top: 0.9rem;
+    margin-left: -0.6rem;
 }
 

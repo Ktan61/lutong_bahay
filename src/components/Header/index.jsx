@@ -12,7 +12,7 @@ export default function Header() {
             <img src={'/LH_templogo.svg'} alt={'lutong bahay temporary logo'} width={115} height={115} className={styles.logo} />
             <Navigation />
             <div className={styles.search}>
-                <input type="text" />
+                <input type="text" placeholder="Search for recipe"/>
                 <SearchIcon fontSize="medium"/>
                 <AccountBox className={styles.personIcon} fontSize='large'/>
             </div>

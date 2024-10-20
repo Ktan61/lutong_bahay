@@ -24,7 +24,7 @@ export default function ShoppingList() {
                         <button className={styles.button}>Total Cook Time</button>
                     </div>
                     <div className={styles.search}>
-                            <input type="text" />
+                            <input type="text" placeholder="Search for recipe"/>
                             <SearchIcon className={styles.searchIcon}fontSize="medium"/>
                     </div>
                 </section>

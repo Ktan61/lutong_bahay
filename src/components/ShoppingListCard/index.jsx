@@ -90,7 +90,7 @@ export default function ShoppingListCard(props) {
                                             <a href="https://www.instagram.com/explore/locations/432744080540085/tama-supermarket-limit/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--yellow)', textDecoration: 'none' }}>Tama Supermarket →</a> <br />
                                             <a href="https://g.co/kgs/r5sXfYk" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--yellow)', textDecoration: 'none' }}>Kay Market →</a>
                                         </Typography>}>
-                                        <HelpSharpIcon className={styles.specialtyIcon} fontSize="medium"/>
+                                        <HelpSharpIcon className={styles.specialtyIcon} fontSize="small"/>
                                     </Tooltip> : null }
                             </div>
                             <div className={styles.ingredientAmount}>{ingredient[1]}</div> 
