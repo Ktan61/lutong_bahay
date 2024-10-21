@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './ShareRecipe.module.css'
-import Tocino from '/src/images_shoppingList/tocino-pork.jpg'
-import Palabok from '/src/images_shoppingList/palabok.jpg'
+import Tocino from '/public/images_shoppingList/tocino-pork.jpg'
+import Palabok from '/public/images_shoppingList/palabok.jpg'
 
 const ShareRecipeSection = () => {
   return (
