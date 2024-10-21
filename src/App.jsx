@@ -1,4 +1,4 @@
-import styles from './styles/Home.module.css'; 
+import styles from './styles/Home.module.css';
 import Header from './components/Header';
 import HeroSection from './components/Hero/HeroSection';
 import FeaturedRecipes from './components/FeaturedRecipes/FeaturedRecipes';
@@ -12,7 +12,7 @@ function App() {
       <Header />
       <HeroSection />
       <FeaturedRecipes />
-              {/* <div className={styles.blueBar}></div> */}
+      {/* <div className={styles.blueBar}></div> */}
       <ShareRecipeSection />
 
       <a href={`/Testing`}>Link to Testing Page</a>

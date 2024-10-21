@@ -5,7 +5,7 @@ import styles from './Hero.module.css';
 const HeroSection = () => {
   return (
     <>
-      <section style={{ backgroundColor: '#E98704'}}>
+      <section style={{ backgroundColor: '#E98704' }}>
         <div className={styles.container}>
           <div className={styles.textContainer}>
             <h2>A Taste of Home into your Kitchen</h2>
@@ -13,10 +13,10 @@ const HeroSection = () => {
             <button className={styles.shopButton}>Shop Now</button>
           </div>
           <div className={styles.photoContainer}>
-          <img
-            className={styles.tocino}
-            src={Tocino}
-          />
+            <img
+              className={styles.tocino}
+              src={Tocino}
+            />
           </div>
 
         </div>
