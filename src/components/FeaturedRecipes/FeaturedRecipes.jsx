@@ -25,7 +25,7 @@ import styles from './FeaturedRecipes.module.css';
             <div key={index} className={styles.recipeCard}>
               <img
                 className={styles.recipeImg}
-                src={`public/images_shoppingList/recipes/recipe${index + 1}.jpg`}
+                src={`src/recipes/recipe${index + 1}.jpg`}
                 alt={recipe.title}
               />
               <p className={styles.description}>{recipe.description}</p>
