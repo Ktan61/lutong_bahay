@@ -27,8 +27,14 @@ p{
   color: #A11015;
 }
 
-button{
+.shareButton{
   margin: 25px;
+  background-color: #A11015;
+  border-radius: 20px;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  width: 200px;
+  margin: auto;
 }
 
 .innerContainer{
@@ -37,3 +43,4 @@ button{
   justify-content: space-around;
   width: 100%;
 }
+

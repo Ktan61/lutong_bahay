@@ -14,11 +14,12 @@
   text-align: center;
   z-index: 1;
   position: relative;
+  padding-top: 25px;
 }
 
 .blueBar{
   position: absolute;
-  top: 300px;
+  top: 360px;
   width: 100%;
   height: 300px;
  z-index: 2;
@@ -51,17 +52,18 @@
   display: flex;
   flex-direction: column;
 }
-button{
+.featuredButton{
   background-color: #A11015;
   border-radius: 20px;
   padding: 10px;
-  margin: auto;
   font-family: 'Poppins', sans-serif;
+  width: 200px;
+  margin: auto;
 }
 
 .recipeCard img {
   width: auto;
-  height: 325px;
+  height: 350px;
   padding: auto;
 }
 

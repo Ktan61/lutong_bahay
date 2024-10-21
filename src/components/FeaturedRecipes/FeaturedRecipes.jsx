@@ -29,7 +29,7 @@ import styles from './FeaturedRecipes.module.css';
                 alt={recipe.title}
               />
               <p className={styles.description}>{recipe.description}</p>
-              <button>{recipe.title}</button>
+              <button className={styles.featuredButton}>{recipe.title}</button>
             </div>
             
           ))}
