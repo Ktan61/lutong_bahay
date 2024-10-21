@@ -1,15 +1,22 @@
-import './App.css';
+import styles from './styles/Home.module.css'; 
 import Header from './components/Header';
+import HeroSection from './components/Hero/HeroSection';
+import FeaturedRecipes from './components/FeaturedRecipes/FeaturedRecipes';
+import ShareRecipeSection from './components/ShareRecipeSection/ShareRecipeSection';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
   return (
-    <div className='app'>
+    <>
       <Header />
-      This is the HOME PAGE
-      <br />
+      <HeroSection />
+      <FeaturedRecipes />
+      <ShareRecipeSection />
+      <div className={styles.blueBar}></div>
       <a href={`/Testing`}>Link to Testing Page</a>
-    </div>
+      <Footer />
+    </>
   )
 }
 

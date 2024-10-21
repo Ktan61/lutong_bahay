@@ -16,8 +16,12 @@
     "@fontsource/koulen": "^5.1.0",
     "@fontsource/poppins": "^5.1.0",
     "@fontsource/roboto": "^5.1.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@mui/icons-material": "^6.1.1",
     "@mui/material": "^6.1.1",
+    "font-awesome": "^4.7.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
