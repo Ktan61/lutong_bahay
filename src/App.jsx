@@ -12,8 +12,9 @@ function App() {
       <Header />
       <HeroSection />
       <FeaturedRecipes />
+              {/* <div className={styles.blueBar}></div> */}
       <ShareRecipeSection />
-      <div className={styles.blueBar}></div>
+
       <a href={`/Testing`}>Link to Testing Page</a>
       <Footer />
     </>

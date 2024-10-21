@@ -31,8 +31,11 @@ import styles from './FeaturedRecipes.module.css';
               <p className={styles.description}>{recipe.description}</p>
               <button>{recipe.title}</button>
             </div>
+            
           ))}
+
         </div>
+        <div className={styles.blueBar}></div>
       </section>
     );
   };

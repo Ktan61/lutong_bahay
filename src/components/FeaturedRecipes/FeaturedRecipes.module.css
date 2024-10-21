@@ -12,7 +12,17 @@
 .featuredSection {
   height: 100%;
   text-align: center;
+  z-index: 1;
+  position: relative;
+}
 
+.blueBar{
+  position: absolute;
+  top: 300px;
+  width: 100%;
+  height: 300px;
+ z-index: 2;
+ background-color: #012D5E;
 }
 
 .featuredSection h3 {
@@ -27,17 +37,16 @@
 .recipeList {
   display: flex;
   justify-content: space-around;
-  gap: 1rem;
+
   margin-bottom: 100px;
   padding-bottom: 0; 
-  z-index: 1;
+  z-index: 3;
 }
 
 .recipeCard {
   padding: 1rem;
   border-radius: 10px;
-  width: 300px;
-  margin-bottom: 0;
+  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -46,14 +55,14 @@ button{
   background-color: #A11015;
   border-radius: 20px;
   padding: 10px;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
 }
 
 .recipeCard img {
-  width: 250px;
-  height: 250px;
-  border-radius: 10px; 
-  padding: 10px;
-  margin: auto;
+  width: auto;
+  height: 325px;
+  padding: auto;
 }
 
 .title{
@@ -63,6 +72,8 @@ button{
 .description{
   font-size: 12pt;
   color: white;
+  text-align: center;
+  margin: auto;
 }
 
 .recipe-card h4 {

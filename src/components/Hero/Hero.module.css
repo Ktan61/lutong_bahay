@@ -18,26 +18,31 @@ section{
   width: 100vw; 
   padding: 0;
   margin: 0;
-  overflow: hidden; 
-  height: 100%;
+
 }
 .container{
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: 100%;
 }
 
 .textContainer{
   flex: 1;
   padding: 140px;
 }
-.tocino{
+.photoContainer{
   display: flex;
-  position: relative;
-  width: 50%;
-  height: 100%;
+  flex-grow: 1;
+  align-items: center;
   justify-content: flex-end;
+  height: 600px;
+  max-width: 70%;
+}
 
+.tocino{
+ width: 75%;
+ height: 100%;
 }
 
 h2{

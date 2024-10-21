@@ -1,6 +1,6 @@
 .footer {
-  background-color: #1b1b1b;
-  color: #fdb813;
+  background-color: #fdb813; 
+  color: #1b1b1b;
   padding: 40px 20px; /* Increased padding for breathing room */
   text-align: center;
   margin-top: 40px;
@@ -29,7 +29,7 @@
 }
 
 .footer-links li a {
-  color: #fdb813;
+  color: #1b1b1b;
   text-decoration: none;
   font-size: 16px;
 }
@@ -37,9 +37,11 @@
 .footer-links li a:hover {
   text-decoration: underline;
 }
-
+.footer-social{
+  padding: 20px;
+}
 .footer-social a {
-  color: #fdb813;
+  color: #1b1b1b;
   margin: 0 10px;
   font-size: 20px;
   text-decoration: none;
