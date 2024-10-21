@@ -1,9 +1,9 @@
 import './App.css';
-import Header from './components/Header';
-import HeroSection from './components/Hero/HeroSection';
-import FeaturedRecipes from './components/FeaturedRecipes/FeaturedRecipes';
-import ShareRecipeSection from './components/ShareRecipeSection/ShareRecipeSection';
-import Footer from './components/Footer/Footer';
+import Header from './components/Header/index.jsx';
+import HeroSection from './components/Hero/index.jsx';
+import FeaturedRecipes from './components/FeaturedRecipes/index.jsx';
+import ShareRecipeSection from './components/ShareRecipeSection/index.jsx';
+import Footer from './components/Footer/index.jsx';
 
 function App() {
 

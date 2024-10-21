@@ -55,7 +55,8 @@ h2 {
 
 .shopButton {
   font-family: 'Poppins', sans-serif;
-  background-color: "#F0AB1A";
+  background-color: #A11015;
+  color: white;
   padding: 10px;
   width: 250px;
   border-radius: 20px;
