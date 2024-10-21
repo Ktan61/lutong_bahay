@@ -40,4 +40,5 @@ import styles from './FeaturedRecipes.module.css';
     );
   };
 
+  
 export default FeaturedRecipes;
