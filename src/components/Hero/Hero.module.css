@@ -50,10 +50,20 @@ body {
 
 .shopButton {
   font-family: 'Poppins', sans-serif;
-  background-color: "#F0AB1A";
+  background-color: #F0AB1A;
   padding:10px;
   width: 250px;
   border-radius: 20px;
+  border: 1px;
+  border-style: none;
+  transition: background-color .55s ease-in-out;
+  color: white;
+}
+
+.shopButton:hover{
+  background-color: #F79824;
+  transition: background-color 1s ease-in-out;
+  cursor: pointer;
 }
 
 .photoContainer{

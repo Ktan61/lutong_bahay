@@ -39,7 +39,16 @@
   padding: 10px;
   font-family: 'Poppins', sans-serif;
   width: 200px;
+  color: white;
   margin: auto;
+  border-style: none;
+  transition: background-color 1s ease-in-out;
+}
+
+.shareButton:hover{
+  background-color: #710000;
+  transition: background-color .55s ease-in-out;
+  cursor: pointer;
 }
 
 .palabokContainer {

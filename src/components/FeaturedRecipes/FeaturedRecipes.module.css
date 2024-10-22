@@ -49,6 +49,14 @@
   padding: auto;
 }
 
+.recipeDescription {
+  font-size: 12pt;
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+}
+
 .featuredButton {
   background-color: #A11015;
   border-radius: 20px;
@@ -56,14 +64,17 @@
   font-family: 'Poppins', sans-serif;
   width: 200px;
   margin: auto;
+  color: white;
+  border-style: none;
+  transition: background-color 1s ease-in-out;
 }
 
-.recipeDescription {
-  font-size: 12pt;
-  color: white;
-  text-align: center;
-  margin: auto;
+.featuredButton:hover{
+  background-color: #710000;
+  transition: background-color .55s ease-in-out;
+  cursor: pointer;
 }
+
 
 .title {
   color: white;
