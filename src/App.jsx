@@ -13,7 +13,6 @@ function App() {
       <HeroSection />
       <FeaturedRecipes />
       <ShareRecipeSection />
-      <a href={`/Testing`}>Link to Testing Page</a>
       <Footer/>
     </div>
   )

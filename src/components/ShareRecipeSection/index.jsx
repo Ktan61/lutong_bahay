@@ -13,16 +13,19 @@ const ShareRecipeSection = () => {
             src={Tocino}
           />
           <div className={styles.textContainer}>
-            <h3>Got a Secret Family Recipe? <br /> Don't be shy... Share it with us!</h3>
-            <p>Share your own personal recipes that you learned <br /> from from your Lola, Tita, Tito, or created yourself. <br />The world needs to know your at home specialties. </p>
+            <h3 className={styles.secretRecipeHeader}>Got a Secret Family Recipe? <br /> Don't be shy... Share it with us!</h3>
+            <p className={styles.shareRecipeText}>Share your own personal recipes that you learned <br /> from from your Lola, Tita, Tito, or created yourself. <br />The world needs to know your at home specialties. </p>
             <button className={styles.shareButton}>Share Your Recipe</button>
           </div>
         </div>
 
-        <img
+      <div className={styles.palabokContainer}>
+      <img
           src={Palabok}
           className={styles.palabok}
         />
+      </div>
+
 
       </section>
     </>
