@@ -3,7 +3,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
 import EmailIcon from '@mui/icons-material/Email';
-import styles from './Footer.Module.css';
+import styles from './Footer.module.css';
 
 const Footer = () => {
   return (
