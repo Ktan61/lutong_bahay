@@ -1,7 +1,7 @@
 import React from 'react';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
 import styles from './Footer.module.css';
 
@@ -16,9 +16,9 @@ const Footer = () => {
         </ul>
         <div className={styles.footerSocial}>
           <a className={styles.footerSocialLink} href="https://facebook.com"><FacebookIcon/></a>
-          <a className={styles.footerSocialLink} href="https://twitter.com"><InstagramIcon/></a>
-          <a className={styles.footerSocialLink} href="https://instagram.com"><XIcon/></a>
-          <a className={styles.footerSocialLink} href="mailto:info@example.com"><EmailIcon/></a> 
+          <a className={styles.footerSocialLink} href="https://twitter.com"><XIcon/></a>
+          <a className={styles.footerSocialLink} href="https://instagram.com"><InstagramIcon/></a>
+          <a className={styles.footerSocialLink} href="mailto:info@example.com"><EmailIcon/></a>
         </div>
       </div>
       <div className={styles.footerBottom}>
@@ -26,6 +26,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+}
 
 export default Footer;
