@@ -1,12 +1,14 @@
-.textContainer {
-  text-align: right;
-  color: orange;
-}
-
 .shareRecipeSection {
   height: 100%;
   padding: 10px;
   padding-bottom: 100px;
+}
+
+.innerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
 }
 
 .round {
@@ -14,20 +16,21 @@
   width: 500px;
 }
 
-.palabok {
-  width: 50%;
-  padding: 10px;
+.textContainer {
+  text-align: right;
+  color: orange;
 }
 
-h3 {
+.secretRecipeHeader {
   font-size: 32pt;
   font-family: 'Berkshire Swash', cursive;
   color: #A11015;
 }
 
-p {
+.shareRecipeText {
   font-family: 'Poppins', sans-serif;
   color: #A11015;
+  padding: 15px;
 }
 
 .shareButton {
@@ -37,13 +40,25 @@ p {
   padding: 10px;
   font-family: 'Poppins', sans-serif;
   width: 200px;
-  margin: auto;
   color: white;
+  margin: auto;
+  border-style: none;
+  transition: background-color 1s ease-in-out;
 }
 
-.innerContainer {
+.shareButton:hover{
+  background-color: #710000;
+  transition: background-color .55s ease-in-out;
+  cursor: pointer;
+}
+
+.palabokContainer {
+  position: relative;
+  justify-content: center;
+  padding: 25px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
+}
+
+.palabok {
+  width: 75%;
 }

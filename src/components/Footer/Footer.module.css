@@ -1,63 +1,61 @@
 .footer {
-  background-color: #fdb813;
+  background-color: #fdb813; 
   color: #1b1b1b;
-  padding: 40px 20px;
+  padding: 40px 20px; /* Increased padding for breathing room */
   text-align: center;
   margin-top: 40px;
   box-sizing: border-box;
   width: 100vw;
 }
 
-.footer-top {
+.footerTop {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.footer-links {
+.footerLinks {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   gap: 20px;
-  justify-content: center;
+  justify-content: center; 
 }
 
-.footer-links li {
+.footerLinksList {
   margin: 0;
 }
 
-.footer-links li a {
+.footerLinksLink {
   color: #1b1b1b;
   text-decoration: none;
   font-size: 16px;
 }
 
-.footer-links li a:hover {
+.footerLinksLink:hover {
   text-decoration: underline;
 }
-
-.footer-social {
+.footerSocial{
   padding: 20px;
 }
-
-.footer-social a {
+.footerSocialLink{
   color: #1b1b1b;
   margin: 0 10px;
   font-size: 20px;
   text-decoration: none;
 }
 
-.footer-social a:hover {
+.footerSocialLink:hover {
   color: #fff;
 }
 
-.footer-bottom {
+.footerBottom {
   margin-top: 20px;
 }
 
-.footer-bottom p {
+.footerBottomText {
   margin: 0;
   font-size: 14px;
 }

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Tocino from '/public/images_shoppingList/tocino-pork.jpg'
 import styles from './Hero.module.css';
