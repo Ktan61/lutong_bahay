@@ -1,27 +1,28 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import './Footer.css';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import XIcon from '@mui/icons-material/X';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import EmailIcon from '@mui/icons-material/Email';
+import styles from './Footer.module.css';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-top">
-        <ul className="footer-links">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Contact</a></li>
+    <footer className={styles.footer}>
+      <div className={styles.footerTop}>
+        <ul className={styles.footerLinks}>
+          <li className={styles.footerLinksList}><a className={styles.footerLinksLink} href="#">About Us</a></li>
+          <li className={styles.footerLinksList}><a className={styles.footerLinksLink} href="#">Privacy Policy</a></li>
+          <li className={styles.footerLinksList}><a className={styles.footerLinksLink} href="#">Contact</a></li>
         </ul>
-        <div className="footer-social">
-          <a href="https://facebook.com"><FontAwesomeIcon icon={faFacebook} /></a>
-          <a href="https://twitter.com"><FontAwesomeIcon icon={faTwitter} /></a>
-          <a href="https://instagram.com"><FontAwesomeIcon icon={faInstagram} /></a>
-          <a href="mailto:info@example.com"><FontAwesomeIcon icon={faEnvelope} /></a>
+        <div className={styles.footerSocial}>
+          <a className={styles.footerSocialLink} href="https://facebook.com"><FacebookIcon/></a>
+          <a className={styles.footerSocialLink} href="https://twitter.com"><XIcon/></a>
+          <a className={styles.footerSocialLink} href="https://instagram.com"><InstagramIcon/></a>
+          <a className={styles.footerSocialLink} href="mailto:info@example.com"><EmailIcon/></a>
         </div>
       </div>
-      <div className="footer-bottom">
-        <p>&copy; 2024 Lutong Bahay. All Rights Reserved.</p>
+      <div className={styles.footerBottom}>
+        <p className={styles.footerBottomText}>&copy; 2024 Lutong Bahay. All Rights Reserved.</p>
       </div>
     </footer>
   );

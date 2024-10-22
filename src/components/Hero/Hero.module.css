@@ -11,16 +11,16 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-section{
+.heroSection{
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100vw; 
   padding: 0;
   margin: 0;
-
+  background-color: #E98704
 }
-.container{
+.heroContainer{
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -28,27 +28,24 @@ section{
 }
 
 .textContainer{
-  flex: 1;
-  padding: 140px;
-}
-.photoContainer{
   display: flex;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: flex-end;
-  height: 600px;
-  max-width: 70%;
+  flex-direction: column;
+  width: 600px;
+  position: relative;
+  height: 100%;
+  margin: auto;
+  padding-left: 225px;
 }
 
-.tocino{
- width: 75%;
- height: 100%;
-}
-
-h2{
+.heroHeader{
   font-family: 'Berkshire Swash', cursive;
   font-size: 36px;
   color: white  
+}
+
+.heroText{
+  padding: 10px;
+  color: white;
 }
 
 .shopButton {
@@ -59,8 +56,23 @@ h2{
   border-radius: 20px;
 }
 
-p{
-  padding: 10px;
-  color: white;
+.photoContainer{
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: flex-end;
+  height: 400px;
+  max-width: 70%;
 }
+
+.tocino{
+ width: 75%;
+ height: 100%;
+}
+
+
+
+
+
+
 

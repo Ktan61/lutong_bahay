@@ -19,7 +19,7 @@ import styles from './FeaturedRecipes.module.css';
   const FeaturedRecipes = () => {
     return (
       <section className={styles.featuredSection}>
-        <h3>All you need in one place</h3>
+        <h3 className={styles.recipeHeader}>All you need in one place</h3>
         <div className={styles.recipeList}>
           {recipes.map((recipe, index) => (
             <div key={index} className={styles.recipeCard}>
@@ -28,7 +28,7 @@ import styles from './FeaturedRecipes.module.css';
                 src={`public/images_shoppingList/recipes/recipe${index + 1}.jpg`}
                 alt={recipe.title}
               />
-              <p className={styles.description}>{recipe.description}</p>
+              <p className={styles.recipeDescription}>{recipe.description}</p>
               <button className={styles.featuredButton}>{recipe.title}</button>
             </div>
             

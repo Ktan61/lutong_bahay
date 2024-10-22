@@ -7,8 +7,6 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-
-
 .featuredSection {
   height: 100%;
   text-align: center;
@@ -17,16 +15,7 @@
   padding-top: 25px;
 }
 
-.blueBar {
-  position: absolute;
-  top: 360px;
-  width: 100%;
-  height: 300px;
-  z-index: 2;
-  background-color: #012D5E;
-}
-
-.featuredSection h3 {
+.recipeHeader {
   font-family: 'Berkshire Swash', cursive;
   font-size: 2.5rem;
   margin-top: .5rem;
@@ -38,10 +27,10 @@
 .recipeList {
   display: flex;
   justify-content: space-around;
-
   margin-bottom: 100px;
   padding-bottom: 0;
   z-index: 3;
+  flex-direction: row;
 }
 
 .recipeCard {
@@ -51,6 +40,13 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  z-index: 2;
+}
+
+.recipeImg {
+  width: auto;
+  height: 350px;
+  padding: auto;
 }
 
 .featuredButton {
@@ -62,49 +58,22 @@
   margin: auto;
 }
 
-.recipeCard img {
-  width: auto;
-  height: 350px;
-  padding: auto;
-}
-
-.title {
-  color: white;
-}
-
-.description {
+.recipeDescription {
   font-size: 12pt;
   color: white;
   text-align: center;
   margin: auto;
 }
 
-.recipe-card h4 {
-  margin-top: 3rem;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.2rem;
-  color: #10254E;
+.title {
+  color: white;
 }
 
-.recipeList {
-  display: flex;
-  flex-direction: row;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-}
-
-h3 {
-  font-family: 'Berkshire Swash', cursive;
-}
-
-.backdrop {
+.blueBar {
   position: absolute;
+  top: 360px;
+  width: 100%;
+  height: 300px;
+  z-index: 1;
   background-color: #012D5E;
-  width: 100vw;
-  height: 200px;
-  bottom: -295px;
-  z-index: 0;
 }
