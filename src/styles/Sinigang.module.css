@@ -1,59 +1,63 @@
 .sinigangPage {
     padding: 20px;
-    margin: 16px 240px 0px 240px; 
-    padding-bottom: 32px;
+    margin: 16px auto; 
+    max-width: 1200px;
 }
 
 .banner {
-    flex: 1; 
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bannerImage {
-    width: 100%; 
-    height: 100%; 
-    object-fit: fill; 
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
 }
 
 .keyInfo {
     display: flex;
-    flex-direction: row;
-    margin: 10px;
+    flex-wrap: wrap; 
+    margin: 10px 0;
+    justify-content: center; 
 }
 
 .infoChips {
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
     border-radius: 10px;
     padding: 15px;
     border: 2px solid #F0AB1A;
+    flex: 1; 
+    text-align: center; 
+    max-width: 200px; 
 }
 
 .name {
-    font-size: 50px;
-    margin-top: 10px; 
-    margin-bottom: 10; 
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: #A11015;
+    text-align: left; 
 }
 
-.ingredientsLabel {
+.ingredientsLabel,
+.stepsLabel {
     color: #F0AB1A;
     margin-top: 20px;
     padding-top: 30px;
+    text-align: center;
 }
 
 .ingredientsList {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px; 
-    padding: 16px; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px;
+    padding: 16px;
 }
 
 .sinigangList {
     margin-bottom: 10px;
-    flex-wrap: wrap;
 }
 
 .sinigangList ul {
@@ -63,38 +67,26 @@
 
 .sinigangList li {
     display: flex;
-    align-items: center; 
-    margin-bottom: 10px; 
-    flex-wrap: wrap; 
-}
-
-h4 {
-    margin-bottom: 15px;
-}
-
-.ingredientsList input[type="checkbox"] {
-    margin-right: 10px; 
-    flex-shrink: 0;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .stepsDetails {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px; 
-    padding: 16px; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+    padding: 16px;
 }
 
 .stepsColumns {
-    display: flex; 
-    flex-direction: column; 
     padding: 20px;
 }
 
 .stepsImage {
-    width: 350px; 
-    height: auto; 
-    margin: 10px 0; 
-    object-fit: fill; 
+    width: 100%; 
+    height: auto;
+    margin: 10px 0;
+    object-fit: cover;
 }
 
 .stepsColumns li {
@@ -105,42 +97,86 @@ h4 {
     padding-top: 20px;
 }
 
-.stepsLabel {
-    color: #10254E;
-}
-
 .customCheckbox {
-    display: flex; 
-    align-items: center; 
-    cursor: pointer; 
-    width: 100%; 
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
 }
 
 .customCheckbox input {
-    display: none; 
+    display: none;
 }
 
 .checkmark {
-    width: 20px; 
-    height: 20px; 
-    border: 2px solid #F0AB1A; 
-    border-radius: 4px; 
-    margin-right: 10px; 
-    position: relative; 
+    width: 20px;
+    height: 20px;
+    border: 2px solid #F0AB1A;
+    border-radius: 4px;
+    margin-right: 10px;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    transition: background-color 0.3s, border-color 0.3s; 
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, border-color 0.3s;
 }
 
 .customCheckbox input:checked + .checkmark {
-    background-color: #10254E; 
-    border: 2px solid #10254E; 
+    background-color: #10254E;
+    border: 2px solid #10254E;
 }
 
 .customCheckbox input:checked + .checkmark::after {
-    content: ""; 
-    width: 10px; 
-    height: 10px; 
-    border-radius: 2px; 
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .name {
+        font-size: 30px; 
+    }
+
+    .infoChips {
+        max-width: none; 
+        margin: 10px 5px; 
+    }
+
+    .stepsDetails {
+        grid-template-columns: 1fr; 
+    }
+
+    .ingredientsList {
+        grid-template-columns: 1fr; 
+    }
+
+    .stepsImage {
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 24px; 
+    }
+
+    .ingredientsLabel,
+    .stepsLabel {
+        font-size: 20px; 
+    }
+
+    .infoChips {
+        padding: 10px;
+        font-size: 14px; 
+    }
+
+    .stepsColumns {
+        padding: 10px; 
+    }
+
+    .stepsImage {
+        margin: 5px 0;
+    }
 }
