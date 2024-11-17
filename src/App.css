@@ -5,6 +5,7 @@
   --yellow: #F0AB1A;
   --blue: #10254E;
   --cream: #FEF8EF;
+  --white: #FFFFFF;
 }
 
 * {
@@ -18,7 +19,7 @@ h1 {
 }
 
 body {
-  font-family: 'Figtree', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 

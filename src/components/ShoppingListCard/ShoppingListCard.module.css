@@ -1,12 +1,14 @@
 .container {
-    flex-basis: calc(33.33% - 2rem); 
-    flex-grow: 1;
-    max-width: 30%; 
-    height: auto; 
-    background-color: var(--cream);
-    border: var(--yellow) solid 8px;
+    display: flex;
+    flex-direction: column;
+    width: 32%; 
+    max-width: 100%;  /* Ensures the container doesn't exceed its parent's width */
+    min-width: 320px;  /* Keeps the container at least 300px wide */
+    background-color: var(--white);
+    border: var(--yellow) solid 6px;
     border-radius: 15px;
     padding-bottom: 1.5rem;
+    box-sizing: border-box;  /* Ensures padding and borders are included in width/height calculation */
 }
 
 .imageContainer {
@@ -63,6 +65,11 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
+
+.totalCookTime {
+    padding: 0rem 1rem .5rem;
+    color: var(--blue)
+}
     
 .ingredientContainer {
     display: flex;
@@ -85,7 +92,7 @@
 .ingredientsLeft{
     display: flex;
     justify-content: center;
-    font-family: "Poppins", sens-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.8rem;
 }
 
@@ -96,7 +103,7 @@
 .ingredientName{}
 
 .ingredientAmount{
-    font-family: "Poppins", sens-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.8rem;
 }
 
@@ -107,3 +114,6 @@
     margin-left: -0.6rem;
 }
 
+/*MEDIA*/
+
+  

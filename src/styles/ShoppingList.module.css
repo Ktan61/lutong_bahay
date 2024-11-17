@@ -2,31 +2,76 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    background-color: var(--blue);
-    padding: 2rem 12.5% 2rem 12.5%;
+    height: 100%;
+    min-height: 71vh;
+    background-color: var(--cream);
+    padding: 2rem 12.5%;
+    overflow-y: hidden;
+}
+
+.filterHeader {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    height:
+}
+
+.filterHeaderRight {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    flex: 1;
 }
 
 .title {
-    color: var(--cream);
-}
-
-.sortButtons {
     display: flex;
-    justify-content: space-between;
+    color: var(--blue);
+    font-size: 2rem;
 }
 
-.buttonContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.7rem
-}
-
-.button {
-    padding: 0.5rem 2rem;
+select {
+    display: inline-block;
+    min-width: 220px;
+    height: 2.9rem;
+    background-color: #f3bc48;
+    color: var(--black);
+    border: 5px solid #f3bc48;
+    padding: 10px 12px;
+    border-radius: 12px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    background-color: var(--orange);
-    border-radius: 12px;
+    font-size: 16px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select::after {
+    content: "▼";
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 18px;
+    color: #f3bc48;
+}
+
+select option {
+    background-color: var;
+    color: var(----black);
+}
+
+select:hover {
+    background-color: #f3bc48;
 }
 
 .button:hover {
@@ -37,11 +82,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 250px;
+    min-width: 220px;
     height: 2.5rem;
-    margin: 0 0 0 1rem;
-    background-color: var(--cream);
-    border: var(--orange) 5px solid;
+    background-color: var(--white);
+    border: #f3bc48 5px solid;
     border-radius: 12px;
 }
 
@@ -52,7 +96,7 @@
     padding-left: 15px;
     margin: 0;
     height: 1.3rem;
-    width: 170px;
+    min-width: 160px;
 }
 
 .searchIcon {
@@ -61,26 +105,43 @@
 
 .cardContainer {
     display: flex;
-    justify-content: space-between; /* Spread cards evenly */
     flex-wrap: wrap;
     gap: 1rem;
 }
 
-
-/* Responsive wrapping behavior */
 @media (max-width: 1440px) {
     .cardContainer {
-        justify-content: center; /* Center cards when screen gets smaller */
+        justify-content: center;
     }
 }
 
-/* Adjust card layout for smaller screens */
-@media (max-width: 768px) {
-    .container {
-        padding: 2rem 5%; /* Reduce padding for smaller screens */
+@media (max-width: 1330px) {
+    .title {
+        width: 100%;
+        justify-content: center;
     }
-    
-    .cardContainer {
-        justify-content: space-around;
+    .filterHeaderRight {
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .filterHeader {
+        flex-direction: column;
+    }
+    .filterHeaderRight {
+        flex-wrap: wrap;
+    }
+    .filterContainer {
+        width: 100%;
+        height: 3rem;
+    }
+    .container {
+        padding: 2rem 5%;
+    }
+    .search {
+        width: 100%;
     }
 }
