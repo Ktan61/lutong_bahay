@@ -44,7 +44,10 @@ export default function Editor({ setPosts }) {
             {isModalOpen && (
                 <div className={styles.modal}> 
                     <div className={styles.modalContent}>
-                        <h2>Add Content</h2>
+                        <div className={styles.modalHeader}>
+                            <h2>Add Content</h2>
+                            <button className={styles.button2} type="button" onClick={handleCloseModal}>X</button>
+                        </div>
                         <form onSubmit={handleSubmit}>
                             <fieldset>
                                 <legend>Name of Food</legend>
@@ -75,8 +78,7 @@ export default function Editor({ setPosts }) {
                                     onChange={(e) => setParagraph(e.target.value)}
                                 ></textarea>
                             </fieldset>
-                            <button type="submit">Post Content</button>
-                            <button type="button" onClick={handleCloseModal}>Cancel</button>
+                            <button className={styles.button} type="submit">Post Content</button>
                         </form>
                     </div>
                 </div>

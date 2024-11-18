@@ -1,3 +1,20 @@
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+fieldset {
+    border: 3px solid var(--yellow); 
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+fieldset:focus-within {
+    border-color: var(--blue); 
+}
+
 .modal {
     position: fixed;
     top: 0;
@@ -11,13 +28,23 @@
     z-index: 1000;
 }
 
-.modalContent { 
-    background: white;
+.modalContent {
+    background: var(--cream);
     padding: 16px;
     border-radius: 8px;
     width: 100%;
-    max-width: 400px; 
+    max-width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Ensure it's positioned relative to the container */
+}
+
+textarea {
+    width: 100%; /* Make sure it doesn’t extend past the parent */
+    background-color: var(--white); /* Same background as parent */
+    border: 1px solid #ddd;
+    padding: 8px;
+    resize: vertical;
+    box-sizing: border-box; /* Ensures padding and borders are inside the width */
 }
 
 .postInput {
@@ -130,6 +157,39 @@
 
 .filled {
     fill: var(--red); /* For heart */
+}
+
+.button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 125px;
+    align-self: center; 
+}
+
+.button:hover {
+    background-color: #1a408b;
+}
+
+.button2 {
+    margin-top: 10px;
+    padding: 0.75rem 0.9rem;
+    background-color: #A11015;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: center; 
+}
+
+.button2:hover {
+    background-color: #d9141a;
 }
 
 
