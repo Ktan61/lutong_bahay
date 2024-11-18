@@ -3,8 +3,10 @@
     min-height: 100vh;
 }
 
-.forumContainer{
-    margin: 16px 240px 0px 240px;
+.forumContainer {
+    margin: 16px auto; 
+    padding: 0 16px;
+    max-width: 1200px; 
     padding-bottom: 32px;
 }
 
@@ -12,19 +14,22 @@
     background-color: var(--cream);
     border-radius: 10px;
     display: flex;
+    flex-wrap: wrap; 
     padding: 32px;
+    gap: 16px; 
 }
 
 .sideContainer {
     width: 25%;
-    border-right: solid;
+    min-width: 250px; 
+    border-right: 1px solid #ccc;
     padding-right: 16px;
-    font-size: 12px;
+    font-size: 14px; 
 }
 
 .postContainer {
+    flex: 1; 
     margin-left: 16px;
-    width: 100%;
 }
 
 .description img {
@@ -33,23 +38,23 @@
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 16px;
-  }
+}
 
 .description > h4 {
-    margin: 24px 0px;
+    margin: 24px 0;
 }
 
 .description {
-    border-bottom: solid;
+    border-bottom: 1px solid #ccc;
     padding-bottom: 16px;
 }
 
 .tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 4px;
-    margin: 32px 0px;
-    border-bottom: solid;
+    gap: 8px; 
+    margin: 32px 0;
+    border-bottom: 1px solid #ccc;
     padding-bottom: 32px;
 }
 
@@ -59,6 +64,7 @@
     font-weight: 700;
     color: var(--red);
     font-size: 16px;
+    cursor: pointer;
 }
 
 .sections {
@@ -66,7 +72,8 @@
     flex-direction: column;
     gap: 16px;
     align-items: flex-start;
-    padding-bottom: 10rem;
+    padding-bottom: 4rem;
+    margin-top: 3rem;
 }
 
 .heart {
@@ -82,10 +89,66 @@
 
 .section {
     display: flex;
+    align-items: center;
     gap: 8px;
 }
 
 h1 {
     color: var(--cream);
-    margin: 32px 0px 16px 0px;
+    margin: 32px 0 16px 0;
+    text-align: center; 
+}
+
+
+@media (max-width: 1024px) {
+    .forumContent {
+        flex-direction: column; 
+        padding: 24px; 
+    }
+
+    .sideContainer {
+        width: 100%; 
+        border-right: none; 
+        border-bottom: 1px solid #ccc; 
+        padding-bottom: 16px;
+        margin-bottom: 16px;
+    }
+
+    .postContainer {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .forumContainer {
+        padding: 0 8px; 
+    }
+
+    .description img {
+        border-radius: 8px; 
+    }
+
+    .tags {
+        gap: 6px;
+        margin: 24px 0;
+        padding-bottom: 24px;
+    }
+
+    .section > button {
+        font-size: 14px;
+    }
+
+    .sections {
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .forumContent {
+        padding: 16px;
+    }
+
+    .tags {
+        gap: 4px; 
+    }
 }

@@ -1,13 +1,11 @@
-import { useState } from "react";
+import { useState } from 'react';
 import styles from './Post.module.css';
-import Post from './post';
 
-export default function Editor() {
+export default function Editor({ setPosts }) {
     const [isModalOpen, setModalOpen] = useState(false);
     const [heading, setHeading] = useState("");
     const [paragraph, setParagraph] = useState("");
     const [description, setDescription] = useState("");
-    const [posts, setPosts] = useState([]); // State to hold the posts
 
     const handleOpenModal = () => {
         setModalOpen(true);
@@ -24,14 +22,15 @@ export default function Editor() {
             heading,
             description,
             paragraph,
+            liked: false, // Add liked property
         };
 
-        setPosts([...posts, newPost]);
+        // Update posts in parent component (Forum)
+        setPosts(prevPosts => [...prevPosts, newPost]);
 
         setHeading("");
         setParagraph("");
         setDescription("");
-
         setModalOpen(false);
     };
 
@@ -85,17 +84,6 @@ export default function Editor() {
 
             <div className={styles.titleSection}>
                 <h2>All Posts</h2>
-            </div>
-
-            <div className={styles.postOutput}>
-                {posts.map((post, index) => (
-                    <Post
-                        key={index} 
-                        heading={post.heading}
-                        description={post.description}
-                        paragraph={post.paragraph}
-                    />
-                ))}
             </div>
         </div>
     );

@@ -1,17 +1,33 @@
-import Header from '../components/Header/index.jsx'
+import { useState } from 'react';
+import Header from '../components/Header/index.jsx';
 import Editor from "../components/Post/index.jsx";
 import Output from "../components/Post/output.jsx";
 import styles from "../styles/Forum.module.css";
-import Chips from "../components/Chips/index.jsx";
 import Heart from '../components/Icons/Heart.jsx';
-import Save from '../components/Icons/Save.jsx';
 
 export default function Forum() {
-    return(
+    const [posts, setPosts] = useState([]); // State to hold posts
+    const [showLikedOnly, setShowLikedOnly] = useState(false); // State for filtering liked posts
+
+    // Function to toggle the like status of a post
+    const toggleLike = (postToLike) => {
+        setPosts(prevPosts =>
+            prevPosts.map(post => 
+                post === postToLike ? { ...post, liked: !post.liked } : post
+            )
+        );
+    };
+
+    // Filter posts based on whether they are liked
+    const postsToDisplay = showLikedOnly 
+        ? posts.filter(post => post.liked) 
+        : posts;
+
+    return (
         <div className={styles.forum}>
-             <Header />
-             <div className={styles.forumContainer}>
-             <h1>Share a Recipe</h1>
+            <Header />
+            <div className={styles.forumContainer}>
+                <h1>Share a Recipe</h1>
                 <div className={styles.forumContent}>
                     <div className={styles.sideContainer}>
                         <div className={styles.description}>
@@ -20,34 +36,21 @@ export default function Forum() {
                             <br/>
                             <br/>
                             Make sure to save the posts as they will disappear after a day.
-                            <h4>601 People</h4>
-                            <h4>5 Posts</h4>
-                        </div>
-                        <div className={styles.tags}>
-                            <Chips text="Dessert"/>
-                            <Chips text="Main"/>
-                            <Chips text="Yum"/>
-                            <Chips text="Must Try"/>
-                            <Chips text="Popular"/>
-                        </div>
-                        <div className={styles.sections}>
+                            <h4>{posts.length} Posts</h4> {/* Dynamically display the number of posts */}
                             <div className={styles.section}>
                                 <Heart className={styles.heart}/>
-                                <button>Liked</button>
-                            </div>
-                            <div className={styles.section}>
-                                <Save className={styles.save}/>
-                                <button>Saved</button>
+                                <button onClick={() => setShowLikedOnly(prev => !prev)}>
+                                    {showLikedOnly ? 'Show All' : 'Show Liked'}
+                                </button>
                             </div>
                         </div>
                     </div>
                     <div className={styles.postContainer}>
-                        <Editor />
-                        <Output />
+                        <Editor setPosts={setPosts} /> {/* Pass only setPosts to Editor */}
+                        <Output posts={postsToDisplay} toggleLike={toggleLike} /> {/* Pass filtered posts */}
                     </div>
                 </div>
-             </div>
+            </div>
         </div>
-    )
+    );
 }
-
