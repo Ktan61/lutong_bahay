@@ -1,5 +1,5 @@
 .forum {
-    background-color: var(--yellow);
+    background-color: #F2EBE0;
     min-height: 100vh;
 }
 
@@ -45,7 +45,6 @@
 }
 
 .description {
-    border-bottom: 1px solid #ccc;
     padding-bottom: 16px;
 }
 
@@ -94,7 +93,7 @@
 }
 
 h1 {
-    color: var(--cream);
+    color: var(--blue);
     margin: 32px 0 16px 0;
     text-align: center; 
 }
