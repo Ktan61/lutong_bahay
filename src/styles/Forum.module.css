@@ -11,7 +11,7 @@
 }
 
 .forumContent {
-    background-color: var(--cream);
+    background-color: var(--white);
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap; 
