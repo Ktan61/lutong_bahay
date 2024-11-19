@@ -55,8 +55,10 @@ const ShoppingList = () => {
 
         if (cookTimeFilter) {
             filteredData = filteredData.filter(recipe => {
-                const [hours, minutes] = recipe.totalCookTime;
+                const hours = recipe.totalCookTime.hours || 0;
+                const minutes = recipe.totalCookTime.minutes || 0;
                 const totalMinutes = (hours * 60) + minutes;
+        
                 switch (cookTimeFilter) {
                     case 'under30':
                         return totalMinutes < 30;
