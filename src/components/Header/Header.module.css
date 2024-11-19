@@ -16,7 +16,7 @@
     width: 20%;
 }
 
-.header .search {
+.search {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,3 +42,17 @@
     margin-left: 1rem;
     color: var(--orange);
 }
+
+@media only screen and (max-width: 1048px) {
+    .header {
+        padding: .6rem 12% .8rem 2%
+      }
+  }
+
+@media only screen and (max-width: 800px) {
+
+    .search{
+        width: 80%;
+    }
+  }
+

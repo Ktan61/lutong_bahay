@@ -3,14 +3,26 @@
     justify-content: center;
     align-items: center;
     height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Koulen', sans-serif;
+    font-size: 36px;
+    gap: 3rem;
 }
 
+.logo {
+    padding: 20px;
+}
+.hamborgerContainer{
+    font-family: 'Berkshire Swash', cursive;
+}
 .linksList {
     display: flex;
     justify-content: space-between;
     font-family: 'Koulen', sans-serif;
     font-size: 36px;
     gap: 3rem;
+    padding: 20px;
 }
 
 a {
@@ -23,3 +35,80 @@ a.active {
     text-decoration: none;
 }
 
+
+
+@media screen and (min-width: 800px) {
+    .navigation {
+        display: flex;
+    }
+
+    .mobileHeader, .mobileLogo {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .logo{
+        display: none;
+    }
+    .navigation {
+        display: none;
+        flex-direction: column; 
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: none;
+        z-index: 1000;
+    }
+
+    .linksList{
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+        background-color: rgba(254, 248, 239, 0.75);
+        border-radius: 0 0 10px 10px;
+    }
+
+    .navigation.open {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .mobileLogo{
+        display: flex;
+        padding: 10px;
+    }
+
+    .mobileHeader {
+        display: flex;
+        z-index: 1000;
+        width: 100%;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: var(--cream); 
+    }
+
+    .hamborgerContainer {
+        display: block;
+        padding: 10px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .linksList{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 1048px) {
+    .linksList{
+        font-size: 20px;
+    }
+}
