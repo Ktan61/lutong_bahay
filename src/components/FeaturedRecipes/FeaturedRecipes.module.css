@@ -97,6 +97,7 @@
   .recipeList {
     display: flex;
     flex-direction: column;
+    width: 100vw;
   }
 
   .featuredSection {
@@ -106,5 +107,12 @@
   .blueBar{
     height: 175%;
     top: 125px;
+  }
+
+  .recipeCard{
+    margin: auto;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
   }
 }
