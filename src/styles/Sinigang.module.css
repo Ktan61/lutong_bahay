@@ -71,30 +71,47 @@
     margin-bottom: 10px;
 }
 
+.stepsSection {
+    padding-top: 20px;
+}
+
 .stepsDetails {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 20px;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px; 
+    width: 100%; 
     padding: 16px;
 }
 
-.stepsColumns {
-    padding: 20px;
+.stepsColumn {
+    display: flex;
+    flex-direction: column; 
+}
+
+.stepsList {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.stepsItem {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.stepNumber {
+    font-weight: bold;
+    color: #F0AB1A; 
+    margin-right: 8px; 
 }
 
 .stepsImage {
-    width: 100%; 
+    width: 100%;
     height: auto;
-    margin: 10px 0;
+    margin-top: 10px; 
+    border-radius: 4px;
     object-fit: cover;
-}
-
-.stepsColumns li {
-    padding-bottom: 15px;
-}
-
-.stepsSection {
-    padding-top: 20px;
 }
 
 .customCheckbox {
@@ -172,11 +189,15 @@
         font-size: 14px; 
     }
 
-    .stepsColumns {
-        padding: 10px; 
+    .stepsDetails {
+        grid-template-columns: 1fr;
     }
 
     .stepsImage {
         margin: 5px 0;
+    }
+
+    .stepsItem {
+        margin-bottom: 10px;
     }
 }

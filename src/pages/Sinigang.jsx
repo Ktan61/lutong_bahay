@@ -5,19 +5,16 @@ import '@fontsource/roboto';
 import '@fontsource/koulen';
 import React, { useState } from 'react';
 
-// Import the JSON file
 import recipesData from '../data/list_recipes.json';
 
 export default function Sinigang() {
     const [checkedIngredients, setCheckedIngredients] = useState({});
-
-    // Retrieve the recipe with ID 1
     const recipe = recipesData.recipes.find((recipe) => recipe.id === "1");
 
     const handleCheckboxChange = (ingredient) => {
         setCheckedIngredients((prev) => ({
             ...prev,
-            [ingredient]: !prev[ingredient], // Toggle the checked state
+            [ingredient]: !prev[ingredient],
         }));
     };
 
@@ -92,14 +89,18 @@ export default function Sinigang() {
                         </div>
                     </div>
                 </div>
+
                 <div className={styles.stepsSection}>
                     <h1 className={styles.stepsLabel}>Instructions</h1>
                     <div className={styles.stepsDetails}>
-                        {recipe.instructions.map((instruction, index) => (
-                            <div key={index} className={styles.stepsColumns}>
-                                <ol>
-                                    <li>
-                                        {instruction.step}
+                        <div className={styles.stepsColumn}>
+                            <ol className={styles.stepsList}>
+                                {recipe.instructions.slice(0, 5).map((instruction, index) => (
+                                    <li key={index + 1} className={styles.stepsItem}>
+                                        <div>
+                                            <span className={styles.stepNumber}>{index + 1}. </span>
+                                            {instruction.step}
+                                        </div>
                                         {instruction.image && (
                                             <img
                                                 src={instruction.image}
@@ -108,11 +109,34 @@ export default function Sinigang() {
                                             />
                                         )}
                                     </li>
-                                </ol>
-                            </div>
-                        ))}
+                                ))}
+                            </ol>
+                        </div>
+
+                        <div className={styles.stepsColumn}>
+                            <ol start={6} className={styles.stepsList}>
+                                {recipe.instructions.slice(5).map((instruction, index) => (
+                                    <li key={index + 6} className={styles.stepsItem}>
+                                        <div>
+                                            <span className={styles.stepNumber}>{index + 6}. </span>
+                                            {instruction.step}
+                                        </div>
+                                        {instruction.image && (
+                                            <img
+                                                src={instruction.image}
+                                                alt={instruction.altText}
+                                                className={styles.stepsImage}
+                                            />
+                                        )}
+                                    </li>
+                                ))}
+                            </ol>
+                        </div>
                     </div>
                 </div>
+
+
+
             </div>
         </>
     );
