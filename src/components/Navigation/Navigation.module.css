@@ -23,3 +23,71 @@ a.active {
     text-decoration: none;
 }
 
+.open {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+}
+
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%); }
+}
+
+
+@media screen and (min-width: 801px) {
+    .navigation {
+        display: flex;
+    }
+
+    .mobileHeader, .mobileLogo {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .logo{
+        display: none;
+    }
+    .navigation {
+        display: none;
+        flex-direction: column; 
+        position: absolute;
+        top: 150px;
+        left: 0;
+        width: 100%;
+        background-color: none;
+        z-index: 1000;
+    }
+
+    .navigation.open {
+        display: flex;
+    }
+
+    .mobileLogo{
+        display: flex;
+    }
+
+    .mobileHeader {
+        display: flex;
+        z-index: 1000;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: none; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    }
+
+    .hamborgerContainer {
+        display: block;
+        height: 20;
+        width: 24;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}

@@ -25,7 +25,11 @@ body {
 
 
 
-
+@media only screen and (max-width: 600px) {
+  .app {
+    max-width: 100vw;
+  }
+}
 
 
 
