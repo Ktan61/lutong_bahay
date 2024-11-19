@@ -25,7 +25,7 @@ const RECIPES = [
       name: "Pancit Palabok",
       totalCookTime: { minutes: 20 },
       prepTime: { hours: 1 },
-      image: "/images_shoppingList/pancitpalabok.jpg", 
+      image: "/images_shoppingList/pancitpalabok.png", 
       altText: "Plate of Pancit Palabok",
     }
   ];

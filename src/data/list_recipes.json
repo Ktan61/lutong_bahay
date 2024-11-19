@@ -32,24 +32,24 @@
         ["cast iron dutch oven", "6.75 qt"]
       ],
       "instructions": [
-        { "step": "1. Pat the pork dry with a paper towel to improve browning during searing." },
+        { "step": "Pat the pork dry with a paper towel to improve browning during searing." },
         {
-          "step": "2. In a large pot over medium heat, add the vegetable oil and begin to sear your meat in batches until all the sides have a nice golden brown crust. This should be about 2-5 minutes per batch. Try to not crowd the meat while searing. Transfer the meat onto a clean plate.",
+          "step": "In a large pot over medium heat, add the vegetable oil and begin to sear your meat in batches until all the sides have a nice golden brown crust. This should be about 2-5 minutes per batch. Try to not crowd the meat while searing. Transfer the meat onto a clean plate.",
           "image": "https://www.hungryhuy.com/wp-content/uploads/searing-pork.jpg",
           "altText": "Meat searing in a large pot"
         },
-        { "step": "3. In the same pot, add the onions and sauté for about one minute or until the onions are slightly translucent. Add the garlic and sauté for 30 seconds or until it's fragrant." },
-        { "step": "4. Add 2 cups of filtered water to deglaze the pot thoroughly. Gently scrape the golden brown parts from the searing meat at the bottom of the pan." },
-        { "step": "5. Add the meat back to the pot with only 4 tomatoes (reserve the 5th one for later). Add 2 tablespoons of salt and stir to dissolve." },
-        { "step": "6. Add 6 cups of water or enough so the meat is completely submerged. Bring the heat up to medium-high heat, once the liquid hits a boil let it boil for about 30 seconds." },
-        { "step": "7. Drop the heat to a simmer (about medium-low heat) and simmer for about 45 minutes to 1 hour or until the meat is tender to your liking." },
+        { "step": "In the same pot, add the onions and sauté for about one minute or until the onions are slightly translucent. Add the garlic and sauté for 30 seconds or until it's fragrant." },
+        { "step": "Add 2 cups of filtered water to deglaze the pot thoroughly. Gently scrape the golden brown parts from the searing meat at the bottom of the pan." },
+        { "step": "Add the meat back to the pot with only 4 tomatoes (reserve the 5th one for later). Add 2 tablespoons of salt and stir to dissolve." },
+        { "step": "Add 6 cups of water or enough so the meat is completely submerged. Bring the heat up to medium-high heat, once the liquid hits a boil let it boil for about 30 seconds." },
+        { "step": "Drop the heat to a simmer (about medium-low heat) and simmer for about 45 minutes to 1 hour or until the meat is tender to your liking." },
         {
-          "step": "8. Add the tamarind paste, pepper, and fish sauce to the pot and stir.",
+          "step": "Add the tamarind paste, pepper, and fish sauce to the pot and stir.",
           "image": "https://www.hungryhuy.com/wp-content/uploads/adding-tamarind-paste.jpg",
           "altText": "Tamarind paste and seasonings being added to the pot"
         },
-        { "step": "9. Add the last tomato, eggplant, okra, string beans, and daikon radish into the pot and stir. Simmer for 5-8 minutes or until vegetables are tender, then add kang kong and cook for an additional one minute." },
-        { "step": "10. Taste the soup and adjust with salt, pepper, or lime juice based on your preference. Serve immediately with a side of rice." }
+        { "step": "Add the last tomato, eggplant, okra, string beans, and daikon radish into the pot and stir. Simmer for 5-8 minutes or until vegetables are tender, then add kang kong and cook for an additional one minute." },
+        { "step": "Taste the soup and adjust with salt, pepper, or lime juice based on your preference. Serve immediately with a side of rice." }
       ],
       "totalCookTime": { "hours": 1, "minutes": 5 },
       "prepTime": { "minutes": 20 }
@@ -90,24 +90,24 @@
         ["shave ice machine"]
       ],
       "instructions": [
-        { "step": "1. Cook the tapioca (optional). Bring a medium saucepan of water to a boil over medium-high heat. Add 1/4 cup small tapioca pearls, stir to combine, and reduce the heat to maintain a simmer. Simmer until the tapioca is al dente (translucent with small white centers), about 7 to 8 minutes. Drain through a fine-mesh strainer." },
+        { "step": "Cook the tapioca (optional). Bring a medium saucepan of water to a boil over medium-high heat. Add 1/4 cup small tapioca pearls, stir to combine, and reduce the heat to maintain a simmer. Simmer until the tapioca is al dente (translucent with small white centers), about 7 to 8 minutes. Drain through a fine-mesh strainer." },
         { 
-          "step": "2. Slice the bananas. Peel and slice 3 saba or 2 regular bananas crosswise into 1/4-inch-thick rounds.",
+          "step": "Slice the bananas. Peel and slice 3 saba or 2 regular bananas crosswise into 1/4-inch-thick rounds.",
           "image": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1690,h_1127/f_auto,q_auto:eco,c_fit,w_916,h_611/k%2FPhoto%2FSeries%2F2021-06-how-to-halo-halo%2F2021-06-21_atk-2391",
           "altText": "peeled and sliced bananas"
         },
-        { "step": "3. Make the syrup. Place 1 cup water, 3/4 cup packed light brown sugar, and 1/4 teaspoon kosher salt in a large saucepan. Stir and bring to a boil over medium-high heat. Reduce the heat to maintain a simmer and cook for 5 minutes." },
-        { "step": "4. Add the bananas. Add the bananas and bring to a boil. Reduce the heat to maintain a low simmer and cook until tender and translucent, about 5 minutes." },
-        { "step": "5. Add the tapioca. Add 1/4 teaspoon vanilla extract and tapioca if using, and stir to combine, breaking up any clumps. Transfer to a medium bowl and let cool to room temperature. Cover and refrigerate until cold, about 2 hours." },
-        { "step": "6. Cut the jackfruit. Remove the jackfruit from a 20-ounce can, leaving the syrup behind. Coarsely chop the jackfruit into bite-sized pieces. Return the jackfruit back to the can." },
-        { "step": "7. Make the milk mixture. Place 2/3 cup coconut milk, 3 tablespoons evaporated milk, and 3 tablespoons sweetened condensed milk in a small bowl or liquid measuring cup and stir to combine." },
+        { "step": "Make the syrup. Place 1 cup water, 3/4 cup packed light brown sugar, and 1/4 teaspoon kosher salt in a large saucepan. Stir and bring to a boil over medium-high heat. Reduce the heat to maintain a simmer and cook for 5 minutes." },
+        { "step": "Add the bananas. Add the bananas and bring to a boil. Reduce the heat to maintain a low simmer and cook until tender and translucent, about 5 minutes." },
+        { "step": "Add the tapioca. Add 1/4 teaspoon vanilla extract and tapioca if using, and stir to combine, breaking up any clumps. Transfer to a medium bowl and let cool to room temperature. Cover and refrigerate until cold, about 2 hours." },
+        { "step": "Cut the jackfruit. Remove the jackfruit from a 20-ounce can, leaving the syrup behind. Coarsely chop the jackfruit into bite-sized pieces. Return the jackfruit back to the can." },
+        { "step": "Make the milk mixture. Place 2/3 cup coconut milk, 3 tablespoons evaporated milk, and 3 tablespoons sweetened condensed milk in a small bowl or liquid measuring cup and stir to combine." },
         { 
-          "step": "8. Assemble the halo-halo. For each serving, layer the ingredients in a 16-ounce glass in the following order: 1/3 cup minatamis na saging, 1 scoop coconut or ube ice cream, 2 tablespoons macapuno, 2 tablespoons ube halaya, 1/4 cup jackfruit and syrup, and 1/3 cup nata de coco.",
+          "step": "Assemble the halo-halo. For each serving, layer the ingredients in a 16-ounce glass in the following order: 1/3 cup minatamis na saging, 1 scoop coconut or ube ice cream, 2 tablespoons macapuno, 2 tablespoons ube halaya, 1/4 cup jackfruit and syrup, and 1/3 cup nata de coco.",
           "image": "https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,c_fill,g_auto,w_1690,h_1127/f_auto,q_auto:eco,c_fit,w_916,h_611/k%2FPhoto%2FSeries%2F2021-06-how-to-halo-halo%2F2021-06-21_atk-2485",
           "altText": "in the process of assembling the halo halo withh all the ingredients"
         },
-        { "step": "9. Top with 1 cup shaved ice and drizzle with 3 tablespoons of the milk mixture. Add more shaved ice to fill the glass if needed." },
-        { "step": "10. Serve and enjoy. Serve with a long spoon and mix it all up before eating." }
+        { "step": "Top with 1 cup shaved ice and drizzle with 3 tablespoons of the milk mixture. Add more shaved ice to fill the glass if needed." },
+        { "step": "Serve and enjoy. Serve with a long spoon and mix it all up before eating." }
       ],
       "totalCookTime": { "minutes": 20 },
       "prepTime": { "minutes": 15 }
@@ -140,42 +140,42 @@
       ],
 
       "instructions": [
-        { "step": "1. Chicharon: Place chicharon in a food processor and grind until it becomes small, tiny pieces. Transfer into a bowl and set aside." },
-        { "step": "2. In a large pot over medium heat, add the vegetable oil and begin to sear your meat in batches until all the sides have a nice golden brown crust. This should be about 2-5 minutes per batch. Try to not crowd the meat while searing. Transfer the meat onto a clean plate." },
-        { "step": "3. Limes or calamansi: Clean limes in water to remove any dirt or residue and cut them into wedges." },
-        { "step": "4. Fried garlic slices: Peel and cut garlic into very thin slices (about 2 mm). I like to use a mandolin on a very thin setting. Add one inch of vegetable oil to a small pot over medium-high heat and wait until it reaches 350 °F. Lower the garlic slices into the hot oil and fry for about two minutes or until they turn a slight golden brown. Remove the garlic and place onto a towel to remove excess oil. Set aside for later." },
+        { "step": "Chicharon: Place chicharon in a food processor and grind until it becomes small, tiny pieces. Transfer into a bowl and set aside." },
+        { "step": "In a large pot over medium heat, add the vegetable oil and begin to sear your meat in batches until all the sides have a nice golden brown crust. This should be about 2-5 minutes per batch. Try to not crowd the meat while searing. Transfer the meat onto a clean plate." },
+        { "step": "Limes or calamansi: Clean limes in water to remove any dirt or residue and cut them into wedges." },
+        { "step": "Fried garlic slices: Peel and cut garlic into very thin slices (about 2 mm). I like to use a mandolin on a very thin setting. Add one inch of vegetable oil to a small pot over medium-high heat and wait until it reaches 350 °F. Lower the garlic slices into the hot oil and fry for about two minutes or until they turn a slight golden brown. Remove the garlic and place onto a towel to remove excess oil. Set aside for later." },
         { 
-          "step": "5. Boiled eggs: Add eggs into a small sauce pan over medium-high heat and add water making sure to cover the eggs. Boil eggs in boiling water for 10 minutes. Remove the eggs and run them over cold water until they cool. Peel the eggs and slice into quarters. Set aside.",
+          "step": "Boiled eggs: Add eggs into a small sauce pan over medium-high heat and add water making sure to cover the eggs. Boil eggs in boiling water for 10 minutes. Remove the eggs and run them over cold water until they cool. Peel the eggs and slice into quarters. Set aside.",
           "image": "https://www.hungryhuy.com/wp-content/uploads/pancit-ingredients-2.jpg",
           "altText": "a photo of the ingredients for the toppings" 
         },
-        { "step": "6. Peel and devein the shrimp." },
-        { "step": "7. In a small pot over medium heat, add the seafood stock. Bring to a simmer and then add the prepared shrimp." },
+        { "step": "Peel and devein the shrimp." },
+        { "step": "In a small pot over medium heat, add the seafood stock. Bring to a simmer and then add the prepared shrimp." },
         {
-          "step": "8. Cook shrimp for about two to four minutes or until the shrimp turns pink and feels firm to the touch.",
+          "step": "Cook shrimp for about two to four minutes or until the shrimp turns pink and feels firm to the touch.",
           "image": "https://www.hungryhuy.com/wp-content/uploads/pancit-sauce-1536x1024.jpg",
           "altText": "cooked shrimp for the sauce."
         },
-        { "step": "9. Remove shrimp from the stock and into a chopping board. IMPORTANT: save about 1 oz or ¼ of the shrimp to use for toppings. Use a sharp knife to chop the shrimp into minced pieces." },
-        { "step": "10. Submerge bihon (rice noodles) in cold water for 15 minutes." },
-        { "step": "11. In a large saucepan over medium heat, add oil and onion. Saute onion for about two minutes or until they become slightly translucent. Add the garlic and cook for another 30 seconds or until fragrant." },
+        { "step": "Remove shrimp from the stock and into a chopping board. IMPORTANT: save about 1 oz or ¼ of the shrimp to use for toppings. Use a sharp knife to chop the shrimp into minced pieces." },
+        { "step": "Submerge bihon (rice noodles) in cold water for 15 minutes." },
+        { "step": "In a large saucepan over medium heat, add oil and onion. Saute onion for about two minutes or until they become slightly translucent. Add the garlic and cook for another 30 seconds or until fragrant." },
         {
-          "step": "12. Add the ground pork and chopped shrimp into the saucepan. Stir the mixture to incorporate the onion and garlic.",
+          "step": "Add the ground pork and chopped shrimp into the saucepan. Stir the mixture to incorporate the onion and garlic.",
           "image": "https://www.hungryhuy.com/wp-content/uploads/pancit-seasonings-1536x1024.jpg",
           "altText": "photo of the ingredients needed for the sauce"
         },
-        { "step": "13. Add the seafood stock and stir again." },
-        { "step": "14. In a separate bowl, whisk the annatto powder and water until it’s combined. Then, add this annatto liquid, fish sauce, salt, and pepper into the saucepan and stir. Cook for about two minutes." },
-        { "step": "15. In a separate bowl, whisk the cornstarch and water. Then add this cornstarch water into the large saucepan. Continue to cook the sauce for about eight to 10 minutes or until it’s thickened." },
-        { "step": "16. Remove the pan from the heat and set aside." },
-        { "step": "17. In a pot over medium high heat, add the water and wait for it to boil. Carefully lower the soaked rice noodles and stir. Boil for two minutes or until the noodles are soft (they should not be al dente)." },
+        { "step": "Add the seafood stock and stir again." },
+        { "step": "In a separate bowl, whisk the annatto powder and water until it’s combined. Then, add this annatto liquid, fish sauce, salt, and pepper into the saucepan and stir. Cook for about two minutes." },
+        { "step": "In a separate bowl, whisk the cornstarch and water. Then add this cornstarch water into the large saucepan. Continue to cook the sauce for about eight to 10 minutes or until it’s thickened." },
+        { "step": "Remove the pan from the heat and set aside." },
+        { "step": "In a pot over medium high heat, add the water and wait for it to boil. Carefully lower the soaked rice noodles and stir. Boil for two minutes or until the noodles are soft (they should not be al dente)." },
         {
-          "step": "18. Transfer the noodles into an iced cold bath for about two minutes to stop the cooking process. Move the noodles into a strainer to remove excess water. You can also squeeze the noodles softly over the strainer to remove the water.",
+          "step": "Transfer the noodles into an iced cold bath for about two minutes to stop the cooking process. Move the noodles into a strainer to remove excess water. You can also squeeze the noodles softly over the strainer to remove the water.",
           "image": "https://www.hungryhuy.com/wp-content/uploads/drained-noodles-2-1536x1024.jpg",
           "altText": "bihon noodles being strained of water"
         },
-        { "step": "19. To assemble pancit palabok: Spread out the rice noodles over a large serving platter and use a ladle to spread out the palabok sauce over the noodles. Then, layer the toppings however you desire on top." },
-        { "step": "20. Serve immediately with extra limes/calamansi and chicharon powder on the side." }
+        { "step": "To assemble pancit palabok: Spread out the rice noodles over a large serving platter and use a ladle to spread out the palabok sauce over the noodles. Then, layer the toppings however you desire on top." },
+        { "step": "Serve immediately with extra limes/calamansi and chicharon powder on the side." }
       ],
       "totalCookTime": { "minutes": 20 },
       "prepTime": { "hours": 1 }
