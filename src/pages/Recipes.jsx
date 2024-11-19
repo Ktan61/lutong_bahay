@@ -3,55 +3,64 @@ import RecipesCard from '../components/RecipesCard/index.jsx';
 import styles from '../styles/Recipes.module.css';
 import { Link } from 'react-router-dom';
 
-const CATEGORY = [
+const RECIPES = [
     {
-        name: "Main Dishes",
-        image_url: "https://cdn.shortpixel.ai/spai2/w_1193+q_glossy+ret_img+to_auto/www.hungryhuy.com/wp-content/uploads/pork-sinigang-pot.jpg",
+      id: "1",
+      name: "Sinigang",
+      totalCookTime: { hours: 1, minutes: 5 },
+      prepTime: { minutes: 20 },
+      image: "/images_shoppingList/sinigang.png",
+      altText: "Pot of Sinigang soup surrounded by ingredients",
     },
     {
-        name: "Snacks",
-        image_url: "https://cdn.shortpixel.ai/spai2/w_1193+q_glossy+ret_img+to_auto/www.hungryhuy.com/wp-content/uploads/puto-w-cheese.jpg",
+      id: "2",
+      name: "Halo Halo",
+      totalCookTime: { minutes: 20 },
+      prepTime: { minutes: 15 },
+      image: "/images_shoppingList/halohalo.png",
+      altText: "A serving of Halo-Halo",
     },
     {
-        name: "Soups & Stews",
-        image_url: "https://cdn.shortpixel.ai/spai2/w_1193+q_glossy+ret_img+to_auto/www.hungryhuy.com/wp-content/uploads/kare-kare-vertical.jpg",
-    },
-    {
-        name: "Desserts & Drinks",
-        image_url: "https://www.hungryhuy.com/wp-content/uploads/halo-halo-w-leche-flan2.jpg",
+      id: "3",
+      name: "Pancit Palabok",
+      totalCookTime: { minutes: 20 },
+      prepTime: { hours: 1 },
+      image: "/images_shoppingList/pancitpalabok.png", 
+      altText: "Plate of Pancit Palabok",
     }
-];
+  ];
+  
 
 export default function Recipes() {
-    return (
-        <>
-            <Header />
-            <div className={styles.body}>
-                <div className={styles.recipes}>
-                    <div className={styles.feature}>
-                        <div className={styles.textSection}>
-                            <p>Featured Recipe</p>
-                            <h1 className={styles.name}>Sinigang <br /> na Baboy</h1>
-                            <Link to="/sinigang">
-                                <button className={styles.viewRecipe}>View Recipe</button>
-                            </Link>
-                        </div>
-                        <div className={styles.imageSection}>
-                            <img 
-                                src="https://cdn.shortpixel.ai/spai2/w_1193+q_glossy+ret_img+to_auto/www.hungryhuy.com/wp-content/uploads/pork-sinigang-pot.jpg"
-                                alt="Sinigang na Baboy" 
-                                className={styles.featureImage}
-                            />
-                        </div>
-                    </div>
-                    <h1 className={styles.headingCat}>Our Categories</h1>
-                    <div className={styles.recipesGrid}>
-                        {CATEGORY.map((category, index) => (
-                            <RecipesCard key={index} category={category} />
-                        ))}
-                    </div>
-                </div>
+  return (
+    <>
+      <Header />
+      <div className={styles.body}>
+        <div className={styles.recipes}>
+          <div className={styles.feature}>
+            <div className={styles.textSection}>
+              <p>Featured Recipe</p>
+              <h1 className={styles.name}>Sinigang <br /> na Baboy</h1>
+              <Link to="/Sinigang">
+                <button className={styles.viewRecipe}>View Recipe</button>
+              </Link>
             </div>
-        </>
-    );
+            <div className={styles.imageSection}>
+              <img 
+                src="https://cdn.shortpixel.ai/spai2/w_1193+q_glossy+ret_img+to_auto/www.hungryhuy.com/wp-content/uploads/pork-sinigang-pot.jpg"
+                alt="Sinigang na Baboy" 
+                className={styles.featureImage}
+              />
+            </div>
+          </div>
+          <h1 className={styles.headingCat}>Our Recipes</h1>
+          <div className={styles.recipesGrid}>
+            {RECIPES.map((recipe) => (
+              <RecipesCard key={recipe.id} recipe={recipe} />
+            ))}
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
