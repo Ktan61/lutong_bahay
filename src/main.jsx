@@ -35,14 +35,6 @@ const router = createBrowserRouter([
     element: <Sinigang />,
   },
   {
-    path: "/halohalo",
-    element: <Halohalo />,
-  },
-  {
-    path: "/palabok",
-    element: <Palabok />,
-  },
-  {
     path: "/shoppinglist", 
     element: <ShoppingList />,
   },

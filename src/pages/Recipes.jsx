@@ -4,31 +4,32 @@ import styles from '../styles/Recipes.module.css';
 import { Link } from 'react-router-dom';
 
 const RECIPES = [
-  {
-    id: "1",
-    name: "Sinigang",
-    totalCookTime: { hours: 1, minutes: 5 },
-    prepTime: { minutes: 20 },
-    image: "/images_shoppingList/sinigang.png",
-    altText: "Pot of Sinigang soup surrounded by ingredients",
-  },
-  {
-    id: "2",
-    name: "Halo Halo",
-    totalCookTime: { minutes: 20 },
-    prepTime: { minutes: 15 },
-    image: "/images_shoppingList/halohalo.png",
-    altText: "A serving of Halo-Halo",
-  },
-  {
-    id: "3",
-    name: "Pancit Palabok",
-    totalCookTime: { minutes: 20 },
-    prepTime: { hours: 1 },
-    image: "/images_shoppingList/pancitpalabok.png",
-    altText: "Plate of Pancit Palabok",
-  }
-];
+    {
+      id: "1",
+      name: "Sinigang",
+      totalCookTime: { hours: 1, minutes: 5 },
+      prepTime: { minutes: 20 },
+      image: "/images_shoppingList/sinigang.png",
+      altText: "Pot of Sinigang soup surrounded by ingredients",
+    },
+    {
+      id: "2",
+      name: "Halo Halo",
+      totalCookTime: { minutes: 20 },
+      prepTime: { minutes: 15 },
+      image: "/images_shoppingList/halohalo.png",
+      altText: "A serving of Halo-Halo",
+    },
+    {
+      id: "3",
+      name: "Pancit Palabok",
+      totalCookTime: { minutes: 20 },
+      prepTime: { hours: 1 },
+      image: "/images_shoppingList/pancitpalabok.jpg", 
+      altText: "Plate of Pancit Palabok",
+    }
+  ];
+  
 
 export default function Recipes() {
   return (
