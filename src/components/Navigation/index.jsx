@@ -19,6 +19,13 @@ export default function Navigation() {
     return (
         <>
             <div className={styles.mobileHeader}>
+            <img 
+                src={'/LH_templogo.svg'} 
+                alt={'lutong bahay temporary logo'} 
+                width={64} 
+                height={64} 
+                className={styles.mobileLogo} 
+            />
                 <div className={styles.hamborgerContainer}>
                 <img src={Hamburger} onClick={toggleMenu} className={styles.hamborger}/>
                     {isMenuOpen ? "Close" : "Menu"}
