@@ -3,14 +3,44 @@ import Header from '../components/Header/index.jsx';
 import ShoppingListCard from '../components/ShoppingListCard/index.jsx';
 import styles from '../styles/ShoppingList.module.css'; 
 import SearchIcon from '@mui/icons-material/Search';
-import recipe_list from '../data/list_recipes.json';
+import recipe_list from '../data/list_recipes.json'; 
 
 const ShoppingList = () => {
-    const [allRecipes, setAllRecipes] = useState(recipe_list.recipes);
-    const [filteredRecipes, setFilteredRecipes] = useState(recipe_list.recipes);
+    const [allRecipes, setAllRecipes] = useState([]);
+    const [filteredRecipes, setFilteredRecipes] = useState([]);
     const [categoryFilter, setCategoryFilter] = useState('allItems');
     const [cookTimeFilter, setCookTimeFilter] = useState('');
     const [searchQuery, setSearchQuery] = useState('');
+    const [fetchStatus, setFetchStatus] = useState('idle'); 
+
+    const isLoading = fetchStatus === 'loading';
+    const isError = fetchStatus === 'error';
+
+    useEffect(() => {
+        const fetchRecipes = async () => {
+        const url = false;
+            
+            try {
+                if (url) {
+                    const response = await fetch(url);
+                    const data = await response.json();
+                    setAllRecipes(data.recipes);
+                    setFilteredRecipes(data.recipes);
+                    setFetchStatus('idle');
+                } else {
+                    setFetchStatus('loading');
+                    setAllRecipes(recipe_list.recipes);
+                    setFilteredRecipes(recipe_list.recipes);
+                    setFetchStatus('idle');
+                }
+            } catch (e) {
+                setFetchStatus('error');
+                console.error(e.message);
+            }
+        };
+
+        fetchRecipes();
+    }, []);
 
     useEffect(() => {
         filterRecipes();
@@ -102,15 +132,21 @@ const ShoppingList = () => {
                 </div>
             </section>
 
-            <section className={styles.cardContainer}>
-                {filteredRecipes.map((recipe) => (
-                    <ShoppingListCard 
-                        key={recipe.id} // Ensure unique key is provided
-                        myShoppingList={recipe} 
-                        handleDelete={() => handleDelete(recipe.id)} 
-                    />
-                ))}
-            </section>
+            {isLoading ? (
+                <p>Loading recipes...</p>
+            ) : isError ? (
+                <p>Something went wrong! ☹️</p>
+            ) : (
+                <section className={styles.cardContainer}>
+                    {filteredRecipes.map((recipe) => (
+                        <ShoppingListCard 
+                            key={recipe.id} 
+                            myShoppingList={recipe} 
+                            handleDelete={() => handleDelete(recipe.id)} 
+                        />
+                    ))}
+                </section>
+            )}
         </div>
        </>
     );
