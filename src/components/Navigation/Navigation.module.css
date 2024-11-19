@@ -33,18 +33,6 @@ a.active {
     text-decoration: none;
 }
 
-.open {
-    animation: slide-in 0.5s forwards;
-    -webkit-animation: slide-in 0.5s forwards;
-}
-
-@keyframes slide-in {
-    100% { transform: translateX(0%); }
-}
-
-@-webkit-keyframes slide-in {
-    100% { -webkit-transform: translateX(0%); }
-}
 
 
 @media screen and (min-width: 800px) {
@@ -66,15 +54,26 @@ a.active {
         display: none;
         flex-direction: column; 
         position: absolute;
-        top: 150px;
+        top: 80px;
         left: 0;
         width: 100%;
         background-color: none;
         z-index: 1000;
     }
 
+    .linksList{
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+        background-color: rgba(254, 248, 239, 0.75);
+        border-radius: 0 0 10px 10px;
+    }
+
     .navigation.open {
         display: flex;
+        align-items: flex-start;
     }
 
     .mobileLogo{
