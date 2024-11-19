@@ -4,6 +4,7 @@ import AccountBox from '@mui/icons-material/AccountBox';
 import Navigation from '../Navigation/index.jsx';
 import '@fontsource/berkshire-swash';
 import '@fontsource/roboto';
+import '@fontsource/koulen';
 
 export default function Header() {
     return (
