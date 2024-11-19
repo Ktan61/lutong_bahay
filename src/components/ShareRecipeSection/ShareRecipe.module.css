@@ -18,6 +18,7 @@
 .textContainer {
   text-align: right;
   color: orange;
+  padding:5rem;
 }
 
 .secretRecipeHeader {
@@ -61,4 +62,24 @@
 .palabok {
   max-width: 75%;
   max-height: 500px;
+}
+
+@media only screen and (max-width: 800px) {
+  .shareRecipeSection{
+    width: 100%;
+  }
+  .innerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+  }
+  .textContainer{
+    margin: auto;
+  }
+  .round{
+    margin: auto;
+    width: 80%;
+  }
 }

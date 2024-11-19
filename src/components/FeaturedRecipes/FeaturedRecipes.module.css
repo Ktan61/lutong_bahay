@@ -92,3 +92,19 @@
   z-index: 1;
   background-color: #012D5E;
 }
+
+@media only screen and (max-width: 800px) {
+  .recipeList {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .featuredSection {
+    margin-bottom: 700px
+  }
+
+  .blueBar{
+    height: 175%;
+    top: 125px;
+  }
+}
