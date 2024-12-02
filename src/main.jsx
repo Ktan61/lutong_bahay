@@ -7,6 +7,8 @@ import Recipes from "./pages/Recipes";
 import Sinigang from "./pages/Sinigang";
 import Forum from "./pages/Forum";
 import ShoppingList from "./pages/ShoppingList";
+import HaloHalo from "./pages/HaloHalo";
+import PancitPalabok from "./pages/PancitPalabok";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -33,6 +35,14 @@ const router = createBrowserRouter([
   {
     path: "/sinigang",
     element: <Sinigang />,
+  },
+  {
+    path: "/halohalo",
+    element: <HaloHalo />,
+  },
+  {
+    path: "/pancitPalabok",
+    element: <PancitPalabok />,
   },
   {
     path: "/shoppinglist", 
