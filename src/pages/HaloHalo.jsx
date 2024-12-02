@@ -31,7 +31,7 @@ export default function HaloHalo() {
                 </div>
                 <div>
                     <h1 className={styles.name}>{recipe.name}</h1>
-                    <h3>Filipino Pork Sinigang Soup with Vegetables.</h3>
+                    <h3>A famous Filipino dessert made of shaved ice, milk, and a variety of mix-in layers.</h3>
                     <div className={styles.keyInfo}>
                         <div className={styles.infoChips}>
                             <p>Serves | <strong>{recipe.serves}</strong></p>
@@ -46,7 +46,7 @@ export default function HaloHalo() {
                             <p>Cook Time | <strong>{recipe.totalCookTime.hours} hr {recipe.totalCookTime.minutes} mins</strong></p>
                         </div>
                     </div>
-                    <p>Tangy and sour broth filled with tender pork, tomatoes, and fresh vegetables — a perfect homemade Filipino dish!</p>
+                    <p>Usually served in a tall glass and mixed with a spoon before eating, it helps with the warm summer days!</p>
                 </div>
                 <div className={styles.ingredientsSection}>
                     <h1 className={styles.ingredientsLabel}>Ingredients</h1>

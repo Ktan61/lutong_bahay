@@ -1,0 +1,235 @@
+.pancitPalabokPage {
+    padding: 20px;
+    margin: 16px auto; 
+    max-width: 1200px;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannerImage {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+}
+
+.keyInfo {
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 10px 0;
+    justify-content: center; 
+}
+
+.infoChips {
+    margin: 10px;
+    border-radius: 10px;
+    padding: 15px;
+    border: 2px solid #F0AB1A;
+    flex: 1; 
+    text-align: center; 
+    max-width: 200px; 
+}
+
+.name {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #A11015;
+    text-align: left; 
+}
+
+.ingredientsLabel,
+.stepsLabel {
+    color: #F0AB1A;
+    margin-top: 20px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.ingredientsList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px;
+    padding: 16px;
+}
+
+.sinigangList {
+    margin-bottom: 10px;
+}
+
+.sinigangList ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sinigangList li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.stepsSection {
+    padding-top: 20px;
+}
+
+.stepsDetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px; 
+    width: 100%; 
+    padding: 16px;
+}
+
+.stepsColumn {
+    display: flex;
+    flex-direction: column; 
+}
+
+.stepsList {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.stepsItem {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.stepNumber {
+    font-weight: bold;
+    color: #F0AB1A; 
+    margin-right: 8px; 
+}
+
+.stepsImage {
+    width: 100%;
+    height: auto;
+    margin-top: 10px; 
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.customCheckbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.customCheckbox input {
+    display: none;
+}
+
+.checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #F0AB1A;
+    border-radius: 4px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.customCheckbox input:checked + .checkmark {
+    background-color: #10254E;
+    border: 2px solid #10254E;
+}
+
+.customCheckbox input:checked + .checkmark::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.ingredientsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 16px; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.ingredientsGrid li {
+    display: flex;
+    align-items: center;
+    margin: 
+}
+
+.customCheckbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkmark {
+    margin-right: 8px;
+}
+
+
+@media (max-width: 600px) {
+    .ingredientsGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .name {
+        font-size: 30px; 
+    }
+
+    .infoChips {
+        max-width: none; 
+        margin: 10px 5px; 
+    }
+
+    .stepsDetails {
+        grid-template-columns: 1fr; 
+    }
+
+    .ingredientsList {
+        grid-template-columns: 1fr; 
+    }
+
+    .stepsImage {
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 24px; 
+    }
+
+    .ingredientsLabel,
+    .stepsLabel {
+        font-size: 20px; 
+    }
+
+    .infoChips {
+        padding: 10px;
+        font-size: 14px; 
+    }
+
+    .stepsDetails {
+        grid-template-columns: 1fr;
+    }
+
+    .stepsImage {
+        margin: 5px 0;
+    }
+
+    .stepsItem {
+        margin-bottom: 10px;
+    }
+}
