@@ -9,8 +9,14 @@ import { useState } from 'react';
 export default function ShoppingListCard(props) {
     const { myShoppingList, handleDelete } = props;
 
+    if (!myShoppingList) {
+        return null; 
+    }
+    const ingredients = myShoppingList.ingredients || []; 
+    const totalCookTime = myShoppingList.totalCookTime || {};
+
     const [checkedItems, setCheckedItems] = useState(
-        myShoppingList.ingredients.map(() => false) 
+        ingredients.map(() => false) 
     );
 
     const [isHovered, setIsHovered] = useState(false);
@@ -49,9 +55,9 @@ export default function ShoppingListCard(props) {
             </div>
             <h6 className={styles.totalCookTime}>
                 Total Cook Time: 
-                {myShoppingList.totalCookTime.hours > 0 && ` ${myShoppingList.totalCookTime.hours} hr`} 
-                {myShoppingList.totalCookTime.hours > 0 && myShoppingList.totalCookTime.minutes > 0 ? ' ' : ''} 
-                {myShoppingList.totalCookTime.minutes > 0 && ` ${myShoppingList.totalCookTime.minutes} min`}
+                {myShoppingList.totalCookTime?.hours > 0 && ` ${myShoppingList.totalCookTime.hours} hr`} 
+                {myShoppingList.totalCookTime?.hours > 0 && myShoppingList.totalCookTime.minutes > 0 ? ' ' : ''} 
+                {myShoppingList.totalCookTime?.minutes > 0 && ` ${myShoppingList.totalCookTime.minutes} min`}
             </h6>
             <ul className={styles.ingredientsContainer}>
                 {myShoppingList.ingredients.map((ingredient, index) => (

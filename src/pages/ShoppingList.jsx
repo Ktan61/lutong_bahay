@@ -18,19 +18,20 @@ const ShoppingList = () => {
 
     useEffect(() => {
         const fetchRecipes = async () => {
-        const url = false;
-            
+        const url = 'https://my-json-server.typicode.com/Ktan61/lb_api/recipes';
+
             try {
                 if (url) {
                     const response = await fetch(url);
                     const data = await response.json();
-                    setAllRecipes(data.recipes);
-                    setFilteredRecipes(data.recipes);
+                    console.log(data);
+                    setAllRecipes(data);
+                    setFilteredRecipes(data);
                     setFetchStatus('idle');
                 } else {
                     setFetchStatus('loading');
-                    setAllRecipes(recipe_list.recipes);
-                    setFilteredRecipes(recipe_list.recipes);
+                    setAllRecipes(recipe_list);
+                    setFilteredRecipes(recipe_list);
                     setFetchStatus('idle');
                 }
             } catch (e) {
@@ -55,8 +56,8 @@ const ShoppingList = () => {
 
         if (cookTimeFilter) {
             filteredData = filteredData.filter(recipe => {
-                const hours = recipe.totalCookTime.hours || 0;
-                const minutes = recipe.totalCookTime.minutes || 0;
+                const hours = recipe.totalCookTime?.hours || 0; 
+                const minutes = recipe.totalCookTime?.minutes || 0; 
                 const totalMinutes = (hours * 60) + minutes;
         
                 switch (cookTimeFilter) {
