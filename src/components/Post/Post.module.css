@@ -35,26 +35,26 @@ fieldset:focus-within {
     width: 100%;
     max-width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative; /* Ensure it's positioned relative to the container */
+    position: relative; 
 }
 
 textarea {
-    width: 100%; /* Make sure it doesn’t extend past the parent */
-    background-color: var(--white); /* Same background as parent */
+    width: 100%; 
+    background-color: var(--white); 
     border: 1px solid #ddd;
     padding: 8px;
     resize: vertical;
-    box-sizing: border-box; /* Ensures padding and borders are inside the width */
+    box-sizing: border-box; 
 }
 
 .postInput {
     border: none;
-    width: 100%;
+    width: 95%;
     border-radius: 30px;
     text-align: left;
     padding: 12px 16px;
     font-size: 16px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ddd3c4;
 }
 
 .pfp {
@@ -70,13 +70,10 @@ textarea {
     gap: 12px;
     padding-bottom: 16px;
     margin-bottom: 16px;
-    border-bottom: 1px solid #ddd;
-    flex-wrap: wrap;
 }
 
 .titleSection {
     padding: 16px 0;
-    border-bottom: 1px solid #ddd;
     font-size: 18px;
     text-align: center;
 }
@@ -190,6 +187,14 @@ textarea {
 
 .button2:hover {
     background-color: #d9141a;
+}
+
+h2 {
+   text-align: left; 
+   font-family: Koulen;
+   font-size: 40px;
+   color: var(--blue);
+   font-weight: 400;
 }
 
 
