@@ -40,7 +40,7 @@ export default function PancitPalabok() {
     return (
         <>
             <Header />
-            <div className={styles.sinigangPage}>
+            <div className={styles.pancitPalabokPage}>
                 <div className={styles.banner}>
                     <img src={image} alt={altText} className={styles.bannerImage} />
                 </div>
@@ -111,7 +111,7 @@ export default function PancitPalabok() {
                 <div className={styles.stepsSection}>
                     <h1 className={styles.stepsLabel}>Instructions</h1>
                     <div className={styles.stepsDetails}>
-                        {/* Column 1: Steps 1–10 */}
+
                         <div className={styles.stepsColumn}>
                             <ol className={styles.stepsList}>
                                 {instructions.slice(0, 10).map((instruction, index) => (
@@ -131,7 +131,7 @@ export default function PancitPalabok() {
                                 ))}
                             </ol>
                         </div>
-                        {/* Column 2: Steps 11–20 */}
+
                         <div className={styles.stepsColumn}>
                             <ol start={11} className={styles.stepsList}>
                                 {instructions.slice(10).map((instruction, index) => (
