@@ -91,7 +91,7 @@
 
 .stepsDetails {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr; /* Two columns */
     gap: 40px; 
     width: 100%; 
     padding: 16px;
@@ -99,7 +99,7 @@
 
 .stepsColumn {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 .stepsList {
@@ -126,6 +126,67 @@
     margin-top: 10px; 
     border-radius: 4px;
     object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .stepsDetails {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+
+    .keyInfo {
+        flex-wrap: wrap; 
+    }
+
+    .infoChips {
+        max-width: 150px; 
+    }
+
+    .name {
+        font-size: 30px; 
+        text-align: center;
+    }
+
+    .ingredientsList {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .ingredientsGrid {
+        grid-template-columns: 1fr; /* Single column for very small screens */
+    }
+
+    .stepsDetails {
+        grid-template-columns: 1fr; /* Adjust steps to single column */
+    }
+
+    .stepsImage {
+        margin: 5px 0;
+    }
+
+    .name {
+        font-size: 24px; 
+    }
+
+    .ingredientsLabel,
+    .stepsLabel {
+        font-size: 20px; 
+    }
+
+    .infoChips {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .stepsItem {
+        margin-bottom: 10px;
+    }
+
+    .addShop {
+        width: 100%;
+        max-width: none;
+    }
 }
 
 .customCheckbox {
@@ -187,63 +248,4 @@
 
 .checkmark {
     margin-right: 8px;
-}
-
-
-@media (max-width: 600px) {
-    .ingredientsGrid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 768px) {
-    .name {
-        font-size: 30px; 
-    }
-
-    .infoChips {
-        max-width: none; 
-        margin: 10px 5px; 
-    }
-
-    .stepsDetails {
-        grid-template-columns: 1fr; 
-    }
-
-    .ingredientsList {
-        grid-template-columns: 1fr; 
-    }
-
-    .stepsImage {
-        width: 100%; 
-        height: auto; 
-    }
-}
-
-@media (max-width: 480px) {
-    .name {
-        font-size: 24px; 
-    }
-
-    .ingredientsLabel,
-    .stepsLabel {
-        font-size: 20px; 
-    }
-
-    .infoChips {
-        padding: 10px;
-        font-size: 14px; 
-    }
-
-    .stepsDetails {
-        grid-template-columns: 1fr;
-    }
-
-    .stepsImage {
-        margin: 5px 0;
-    }
-
-    .stepsItem {
-        margin-bottom: 10px;
-    }
 }
