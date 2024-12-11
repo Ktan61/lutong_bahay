@@ -56,6 +56,20 @@
     padding: 16px;
 }
 
+.addShop {
+    margin-top: 20px; 
+    padding: 10px 20px;
+    background-color: #10254E;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 200px;
+    align-self: center; 
+    margin-bottom: 20px;
+}
+
 .sinigangList {
     margin-bottom: 10px;
 }

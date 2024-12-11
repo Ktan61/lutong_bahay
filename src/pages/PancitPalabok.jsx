@@ -4,6 +4,7 @@ import '@fontsource/berkshire-swash';
 import '@fontsource/roboto';
 import '@fontsource/koulen';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import recipesData from '../data/list_recipes.json';
 
@@ -80,6 +81,9 @@ export default function PancitPalabok() {
                                 </li>
                             ))}
                         </ul>
+                        <Link to="/ShoppingList">
+                            <button className={styles.addShop}>Add to Shopping List</button>
+                        </Link>
                     </div>
 
                     {equipment.length > 0 && (
