@@ -59,6 +59,28 @@ export default function Recipes() {
             ))}
           </div>
         </div>
+
+       <div className={styles.recipes}>
+        
+          <div className={styles.feature}>
+          <div className={styles.imageSection}>
+              <img 
+                src="../../public/addRecipe.webp"
+                alt="Sinigang na Baboy" 
+                className={styles.featureImage}
+              />
+            </div>
+            <div className={styles.addTextSection}>
+              <h1 className={styles.headingCat}>Have a family recipe you're excited to share?</h1>
+              <p>Include you family recipe to the growing community of Filipino food enthusiasts around the world! We all know sharing is caring!</p>
+              <Link to="/sinigang">
+                <button className={styles.addRecipe}>Add Recipes</button>
+              </Link>
+            </div>
+            
+          </div>
+        </div>
+
       </div>
     </>
   );

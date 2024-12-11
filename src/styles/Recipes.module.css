@@ -36,6 +36,34 @@ body {
     box-sizing: border-box; 
 }
 
+.addTextSection {
+    flex: 1;
+    background-color: #f2ebe0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    padding: 30px;
+    color: black;
+    height: auto; 
+    box-sizing: border-box; 
+}
+
+.addRecipe {
+    margin-top: 20px; 
+    padding: 10px 20px;
+    background-color: #10254E;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 130px;
+    align-self: center; 
+}
+
+
 .imageSection {
     flex: 1;
     display: flex;
@@ -60,9 +88,10 @@ body {
     border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
-    width: 125px;
+    width: 130px;
     align-self: center; 
 }
+
 
 .viewRecipe:hover {
     background-color: #8F080D;

@@ -4,6 +4,8 @@ import '@fontsource/berkshire-swash';
 import '@fontsource/roboto';
 import '@fontsource/koulen';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 
 import recipesData from '../data/list_recipes.json';
 
@@ -53,6 +55,7 @@ export default function Sinigang() {
                     <div className={styles.ingredientsList}>
                         <div>
                             <h4>Ingredients</h4>
+
                             <ul className={styles.sinigangList}>
                                 {recipe.ingredients.map(([ingredient, quantity], index) => (
                                     <li key={index}>
@@ -68,6 +71,9 @@ export default function Sinigang() {
                                     </li>
                                 ))}
                             </ul>
+                            <Link to="/ShoppingList">
+                                <button className={styles.addShop}>Add to Shopping List</button>
+                            </Link>
                         </div>
                         <div>
                             <h4>Equipment</h4>

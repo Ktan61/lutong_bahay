@@ -4,6 +4,7 @@ import '@fontsource/berkshire-swash';
 import '@fontsource/roboto';
 import '@fontsource/koulen';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import recipesData from '../data/list_recipes.json';
 
@@ -39,7 +40,7 @@ export default function PancitPalabok() {
     return (
         <>
             <Header />
-            <div className={styles.sinigangPage}>
+            <div className={styles.pancitPalabokPage}>
                 <div className={styles.banner}>
                     <img src={image} alt={altText} className={styles.bannerImage} />
                 </div>
@@ -81,7 +82,10 @@ export default function PancitPalabok() {
                             ))}
                         </ul>
                     </div>
-
+                    <Link to="/ShoppingList">
+                        <button className={styles.addShop}>Add to Shopping List</button>
+                    </Link>
+                    
                     {equipment.length > 0 && (
                         <div>
                             <h4>Equipment</h4>
@@ -107,9 +111,10 @@ export default function PancitPalabok() {
                 <div className={styles.stepsSection}>
                     <h1 className={styles.stepsLabel}>Instructions</h1>
                     <div className={styles.stepsDetails}>
-                        {instructions.length > 0 ? (
+
+                        <div className={styles.stepsColumn}>
                             <ol className={styles.stepsList}>
-                                {instructions.map((instruction, index) => (
+                                {instructions.slice(0, 10).map((instruction, index) => (
                                     <li key={index} className={styles.stepsItem}>
                                         <div>
                                             <span className={styles.stepNumber}>{index + 1}. </span>
@@ -125,11 +130,31 @@ export default function PancitPalabok() {
                                     </li>
                                 ))}
                             </ol>
-                        ) : (
-                            <p>No instructions available.</p>
-                        )}
+                        </div>
+
+                        <div className={styles.stepsColumn}>
+                            <ol start={11} className={styles.stepsList}>
+                                {instructions.slice(10).map((instruction, index) => (
+                                    <li key={index + 10} className={styles.stepsItem}>
+                                        <div>
+                                            <span className={styles.stepNumber}>{index + 11}. </span>
+                                            {instruction.step}
+                                        </div>
+                                        {instruction.image && (
+                                            <img
+                                                src={instruction.image}
+                                                alt={instruction.altText}
+                                                className={styles.stepsImage}
+                                            />
+                                        )}
+                                    </li>
+                                ))}
+                            </ol>
+                        </div>
                     </div>
                 </div>
+
+
             </div>
         </>
     );
