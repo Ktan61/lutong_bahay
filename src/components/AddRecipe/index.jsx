@@ -65,7 +65,7 @@ const AddRecipe = ({ onAddRecipe }) => {
     <div className={styles.feature}>
       <div className={styles.imageSection}>
         <img
-          src="../../public/addRecipe.webp"
+          src="/public/addRecipe.webp"
           alt="Add Recipe"
           className={styles.featureImage}
         />
