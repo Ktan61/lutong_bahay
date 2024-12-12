@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './ShareRecipe.module.css';
+import Carousel from '../Carousel';
 
 const ShareRecipeSection = () => {
   return (
@@ -23,13 +24,15 @@ const ShareRecipeSection = () => {
         </div>
       </div>
 
-      <div className={styles.palabokContainer}>
+      <Carousel/>
+
+      {/* <div className={styles.palabokContainer}>
         <img
           src="/images_shoppingList/palabok.jpg"
           className={styles.palabok}
           alt="Palabok noodle dish"
         />
-      </div>
+      </div> */}
     </section>
   );
 };

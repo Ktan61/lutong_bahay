@@ -2,6 +2,8 @@ import Header from '../components/Header/index.jsx';
 import RecipesCard from '../components/RecipesCard';
 import styles from '../styles/Recipes.module.css';
 import { Link } from 'react-router-dom';
+import AddRecipe from "../components/AddRecipe/index.jsx"
+import { useState } from 'react';
 
 const RECIPES = [
   {
@@ -31,6 +33,15 @@ const RECIPES = [
 ];
 
 export default function Recipes() {
+  const [userRecipes, setUserRecipes] = useState([]); // For user-created recipes
+
+  const handleAddRecipe = (newRecipe) => {
+    setUserRecipes([...userRecipes, newRecipe]);
+  };
+
+
+
+
   return (
     <>
       <Header />
@@ -60,26 +71,21 @@ export default function Recipes() {
           </div>
         </div>
 
-       <div className={styles.recipes}>
-        
-          <div className={styles.feature}>
-          <div className={styles.imageSection}>
-              <img 
-                src="../../public/addRecipe.webp"
-                alt="Sinigang na Baboy" 
-                className={styles.featureImage}
-              />
-            </div>
-            <div className={styles.addTextSection}>
-              <h1 className={styles.headingCat}>Have a family recipe you're excited to share?</h1>
-              <p>Include you family recipe to the growing community of Filipino food enthusiasts around the world! We all know sharing is caring!</p>
-              <Link to="/sinigang">
-                <button className={styles.addRecipe}>Add Recipes</button>
-              </Link>
-            </div>
-            
-          </div>
+        <h1 className={styles.headingCat}>Your Recipes</h1>
+        <div className={styles.recipes}>
+          <AddRecipe onAddRecipe={handleAddRecipe} />
         </div>
+        <div className={styles.recipesGrid}>
+          {userRecipes.length > 0 ? (
+            userRecipes.map((recipe) => (
+              <RecipesCard key={recipe.id} recipe={recipe} />
+            ))
+          ) : (
+            <p>No recipes added yet. Use the form below to add your recipe!</p>
+          )}
+        </div>
+
+
 
       </div>
     </>
