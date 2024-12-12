@@ -1,0 +1,150 @@
+.prevPost {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    background: #FFE7C8;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.pfpPosted {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--blue);
+}
+
+.profilePostedDetails {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.profilePostedDetails > p {
+    font-size: 14px;
+    margin: 0;
+    color: #555;
+}
+
+.timePosted {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.heart, .save {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 12px;
+}
+
+.icons {
+    display: flex;
+    gap: 12px;
+}
+
+.filled {
+    fill: var(--red); /* For heart */
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+
+    .postInput {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .post {
+        padding: 12px;
+    }
+
+    .post > h3 {
+        font-size: 16px;
+    }
+
+    .post > h6 {
+        font-size: 13px;
+    }
+
+    .post > p {
+        font-size: 12px;
+    }
+
+    .profilePostedDetails > p {
+        font-size: 13px;
+    }
+
+    .details {
+        gap: 8px;
+    }
+
+    .icons {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modalContent {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .postInput {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .post {
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .post > h3 {
+        font-size: 14px;
+    }
+
+    .post > h6 {
+        font-size: 12px;
+    }
+
+    .post > p {
+        font-size: 11px;
+    }
+
+    .pfp {
+        width: 32px;
+        height: 32px;
+    }
+
+    .pfpPosted {
+        width: 20px;
+        height: 20px;
+    }
+
+    .details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .icons {
+        justify-content: flex-start;
+        gap: 6px;
+    }
+}

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './Post.module.css';
+import PrevPosts from '../PrevPosts/index';
 
 export default function Editor({ setPosts }) {
     const [isModalOpen, setModalOpen] = useState(false);
