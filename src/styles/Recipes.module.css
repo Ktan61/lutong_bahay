@@ -17,6 +17,14 @@ body {
     text-align: left; 
 }
 
+.featured {
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 10px; 
+    color: #A11015;
+    text-align: left; 
+}
+
 .feature {
     display: flex;
     justify-content: space-between;

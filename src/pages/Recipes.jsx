@@ -50,7 +50,7 @@ export default function Recipes() {
         <div className={styles.recipes}>
           <div className={styles.feature}>
             <div className={styles.textSection}>
-              <p>Featured Recipe</p>
+              <h1 className={styles.featured}>Featured Recipe</h1>
               <h1 className={styles.name}>Sinigang <br /> na Baboy</h1>
               <Link to="/sinigang">
                 <button className={styles.viewRecipe}>View Recipe</button>
