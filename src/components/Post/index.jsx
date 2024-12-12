@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './Post.module.css';
+import PrevPosts from '../PrevPosts/index';
 
 export default function Editor({ setPosts }) {
     const [isModalOpen, setModalOpen] = useState(false);
@@ -38,19 +39,19 @@ export default function Editor({ setPosts }) {
         <div>
             <div className={styles.pleaseWork}>
                 <div className={styles.pfp}></div>
-                <button className={styles.postInput} type="button" onClick={handleOpenModal}>Write a post...</button>
+                <button className={styles.postInput} type="button" onClick={handleOpenModal}>Click here to write a post...</button>
             </div>
 
             {isModalOpen && (
                 <div className={styles.modal}> 
                     <div className={styles.modalContent}>
                         <div className={styles.modalHeader}>
-                            <h2>Add Content</h2>
+                            <h2>Write a Post</h2>
                             <button className={styles.button2} type="button" onClick={handleCloseModal}>X</button>
                         </div>
                         <form onSubmit={handleSubmit}>
                             <fieldset>
-                                <legend>Name of Food</legend>
+                                <legend>Title</legend>
                                 <input 
                                     type="text" 
                                     name="heading" 
@@ -59,17 +60,7 @@ export default function Editor({ setPosts }) {
                                 />
                             </fieldset>
                             <fieldset>
-                                <legend>Description</legend>
-                                <textarea 
-                                    rows="5" 
-                                    cols="50" 
-                                    name="description"
-                                    value={description}
-                                    onChange={(e) => setDescription(e.target.value)}
-                                ></textarea>
-                            </fieldset>
-                            <fieldset>
-                                <legend>Ingredients & Recipe</legend>
+                                <legend>Write a tip here</legend>
                                 <textarea 
                                     rows="5" 
                                     cols="50" 
