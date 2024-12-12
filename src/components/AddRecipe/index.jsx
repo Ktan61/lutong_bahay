@@ -1,39 +1,49 @@
 import React, { useState } from "react";
-import styles from "../AddRecipe/AddRecipe.module.css";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
+import styles from "./AddRecipe.module.css"; // Assuming custom styles
+import recipeImages from "../../assets/images";
 
 const AddRecipe = ({ onAddRecipe }) => {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
+  const [isModalOpen, setModalOpen] = useState(false);
   const [newRecipe, setNewRecipe] = useState({
     id: "",
     name: "",
     totalCookTime: { hours: 0, minutes: 0 },
     prepTime: { minutes: 0 },
-    image: "",
-    altText: "",
+    image: recipeImages.breakfast,
+    instructions: "",
+    type: "breakfast",
   });
+
+  const handleOpenModal = () => setModalOpen(true);
+  const handleCloseModal = () => setModalOpen(false);
+
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
 
-    // Handle nested values
-    if (name.includes(".")) {
-      const [key, subKey] = name.split(".");
+    // Update the image when the meal type changes
+    if (name === "type") {
       setNewRecipe((prev) => ({
         ...prev,
-        [key]: { ...prev[key], [subKey]: value },
+        [name]: value,
+        image: recipeImages[value], // Dynamically set the image
       }));
     } else {
-      setNewRecipe((prev) => ({ ...prev, [name]: value }));
+      // Handle nested or other values
+      if (name.includes(".")) {
+        const [key, subKey] = name.split(".");
+        setNewRecipe((prev) => ({
+          ...prev,
+          [key]: { ...prev[key], [subKey]: value },
+        }));
+      } else {
+        setNewRecipe((prev) => ({ ...prev, [name]: value }));
+      }
     }
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     const recipeWithId = { ...newRecipe, id: Date.now().toString() }; // Assign unique ID
@@ -43,10 +53,13 @@ const AddRecipe = ({ onAddRecipe }) => {
       name: "",
       totalCookTime: { hours: 0, minutes: 0 },
       prepTime: { minutes: 0 },
-      image: "",
+      type: "breakfast",
+      image: mealTypeImages.breakfast,
       altText: "",
     });
+    handleCloseModal();
   };
+
 
   return (
     <div className={styles.feature}>
@@ -62,90 +75,103 @@ const AddRecipe = ({ onAddRecipe }) => {
           Have a family recipe you're excited to share?
         </h1>
         <p>
-          Include your family recipe to the growing community of Filipino food
+          Include your family recipe in the growing community of Filipino food
           enthusiasts around the world! We all know sharing is caring!
         </p>
 
-        <Button variant="primary" onClick={handleShow}>
-          Launch demo modal
-        </Button>
+        <button className={styles.button} onClick={handleOpenModal}>
+          Add A Recipe
+        </button>
 
-        <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <Form onSubmit={handleSubmit}>
-              <Form.Group>
-                <Form.Label>Recipe Name</Form.Label>
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Recipe Name"
-                  value={newRecipe.name}
-                  onChange={handleInputChange}
-                />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label>Cook Time (Hours)</Form.Label>
-                <input
-                  type="number"
-                  name="totalCookTime.hours"
-                  placeholder="Cook Time (Hours)"
-                  value={newRecipe.totalCookTime.hours || ""}
-                  onChange={handleInputChange}
-                />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label>Cook Time (Mins)</Form.Label>
-                <input
-                  type="number"
-                  name="totalCookTime.minutes"
-                  placeholder="Cook Time (Minutes)"
-                  value={newRecipe.totalCookTime.minutes || ""}
-                  onChange={handleInputChange}
-                />
-              </Form.Group>
-              <Form.Group>
-              <Form.Label>Prep Time</Form.Label>
-                <input
-                  type="number"
-                  name="prepTime.minutes"
-                  placeholder="Prep Time (Minutes)"
-                  value={newRecipe.prepTime.minutes || ""}
-                  onChange={handleInputChange}
-                />
-              </Form.Group>
-              <Form.Group>
-                <Form.Label>Image</Form.Label>
-                <input
-                  type="text"
-                  name="image"
-                  placeholder="Image URL"
-                  value={newRecipe.image}
-                  onChange={handleInputChange}
-                />
-              </Form.Group>
-              <Form.Group>
-                <input
-                  type="text"
-                  name="altText"
-                  placeholder="Image Alt Text"
-                  value={newRecipe.altText}
-                  onChange={handleInputChange}
-                />
-              </Form.Group>
-              <button type="submit" className={styles.addRecipe}>
-                Add Recipe
-              </button>
-            </Form>
-          </Modal.Body>
-        </Modal>
-
-        {/* <div
-          className="modal show"
-          style={{ display: "block", position: "initial" }}
-        ></div> */}
+        {isModalOpen && (
+          <div className={styles.modal}>
+            <div className={styles.modalContent}>
+              <div className={styles.modalHeader}>
+                <h2>Add Recipe</h2>
+                <button
+                  className={styles.button}
+                  type="button"
+                  onClick={handleCloseModal}
+                >
+                  Close
+                </button>
+              </div>
+              <form onSubmit={handleSubmit}>
+                <fieldset>
+                  <legend>Recipe Name</legend>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Recipe Name"
+                    value={newRecipe.name}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </fieldset>
+                <fieldset>
+                  <legend>Cook Time (Hours)</legend>
+                  <input
+                    type="number"
+                    name="totalCookTime.hours"
+                    placeholder="Cook Time (Hours)"
+                    value={newRecipe.totalCookTime.hours || ""}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </fieldset>
+                <fieldset>
+                  <legend>Cook Time (Minutes)</legend>
+                  <input
+                    type="number"
+                    name="totalCookTime.minutes"
+                    placeholder="Cook Time (Minutes)"
+                    value={newRecipe.totalCookTime.minutes || ""}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </fieldset>
+                <fieldset>
+                  <legend>Prep Time (Minutes)</legend>
+                  <input
+                    type="number"
+                    name="prepTime.minutes"
+                    placeholder="Prep Time (Minutes)"
+                    value={newRecipe.prepTime.minutes || ""}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </fieldset>
+                <fieldset>
+                  <legend>Instructions</legend>
+                  <textarea
+                    name="instructions"
+                    placeholder="What are the steps!"
+                    value={newRecipe.instructions}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </fieldset>
+                <fieldset>
+                  <legend>Breakfast / Lunch / Dinner / Dessert?</legend>
+                  <select
+                    name="type"
+                    id="type"
+                    value={newRecipe.type}
+                    onChange={handleInputChange}
+                  >
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="dessert">Dessert</option>
+                  </select>
+                </fieldset>
+                <button className={styles.button} type="submit">
+                  Add Recipe
+                </button>
+              </form>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

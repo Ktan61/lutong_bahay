@@ -1,4 +1,77 @@
+.feature {
+  text-align: center;
+  padding: 20px;
+}
+
 .imageSection {
   margin: auto;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featureImage {
+  max-width: 100%;
+  height: auto;
+}
+
+.addTextSection {
+  margin-top: 20px;
+}
+
+.headingCat {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.addRecipe {
+  margin-top: 20px;
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+.addRecipe:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.modal-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.modal-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+}
+
+.form-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #F0AB1A;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
 }

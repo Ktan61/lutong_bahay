@@ -23,7 +23,8 @@
     "react-bootstrap": "^2.10.6",
     "react-dom": "^18.3.1",
     "react-slick": "^0.30.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "use-file-picker": "^2.1.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
