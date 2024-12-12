@@ -3,6 +3,7 @@ import RecipesCard from '../components/RecipesCard';
 import styles from '../styles/Recipes.module.css';
 import { Link } from 'react-router-dom';
 import AddRecipe from "../components/AddRecipe/index.jsx"
+import MyRecipe from "../components/MyRecipesCard/index.jsx"
 import { useState } from 'react';
 
 const RECIPES = [
@@ -78,7 +79,7 @@ export default function Recipes() {
         <div className={styles.recipesGrid}>
           {userRecipes.length > 0 ? (
             userRecipes.map((recipe) => (
-              <RecipesCard key={recipe.id} recipe={recipe} />
+              <MyRecipe key={recipe.id} recipe={recipe} />
             ))
           ) : (
             <p>No recipes added yet. Use the form below to add your recipe!</p>
