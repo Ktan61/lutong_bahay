@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Popup.module.css'; // Add a CSS module for styling
+import styles from './Popup.module.css'; 
 
 const Popup = ({ isVisible, title, content, onClose, onConfirm }) => {
     if (!isVisible) return null;
