@@ -25,13 +25,16 @@
 .title {
     font-size: 1.4rem;
     font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .content {
     font-size: .9rem;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .actions {
