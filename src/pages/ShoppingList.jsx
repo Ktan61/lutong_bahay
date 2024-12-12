@@ -3,7 +3,7 @@ import Header from '../components/Header/index.jsx';
 import ShoppingListCard from '../components/ShoppingListCard/index.jsx';
 import styles from '../styles/ShoppingList.module.css'; 
 import SearchIcon from '@mui/icons-material/Search';
-import recipe_list from '../data/list_recipes.json'; 
+import Popup from '../components/Popup/index.jsx';
 
 const ShoppingList = () => {
     const [allRecipes, setAllRecipes] = useState([]);
@@ -12,35 +12,21 @@ const ShoppingList = () => {
     const [cookTimeFilter, setCookTimeFilter] = useState('');
     const [searchQuery, setSearchQuery] = useState('');
     const [fetchStatus, setFetchStatus] = useState('idle'); 
+    const [isPopupVisible, setIsPopupVisible] = useState(false);
 
     const isLoading = fetchStatus === 'loading';
     const isError = fetchStatus === 'error';
 
     useEffect(() => {
-        const fetchRecipes = async () => {
-        const url = 'https://my-json-server.typicode.com/Ktan61/lb_api/recipes';
+        const handleStorageUpdate = () => { 
+            const storedRecipe = localStorage.getItem('recipe'); 
+            if (storedRecipe) { setAllRecipes(JSON.parse(storedRecipe).recipes); } 
+        }; 
 
-            try {
-                if (url) {
-                    const response = await fetch(url);
-                    const data = await response.json();
-                    console.log(data);
-                    setAllRecipes(data);
-                    setFilteredRecipes(data);
-                    setFetchStatus('idle');
-                } else {
-                    setFetchStatus('loading');
-                    setAllRecipes(recipe_list);
-                    setFilteredRecipes(recipe_list);
-                    setFetchStatus('idle');
-                }
-            } catch (e) {
-                setFetchStatus('error');
-                console.error(e.message);
-            }
+        window.addEventListener('storage-update', handleStorageUpdate); 
+        handleStorageUpdate(); 
+        return () => { window.removeEventListener('storage-update', handleStorageUpdate);
         };
-
-        fetchRecipes();
     }, []);
 
     useEffect(() => {
@@ -89,6 +75,25 @@ const ShoppingList = () => {
         setAllRecipes(updatedRecipes);
     };
 
+    const handlePopUpOpen = () => {
+        setIsPopupVisible(true);
+    }
+
+    const handlePopUpClose = () => {
+        setIsPopupVisible(false);
+    };
+
+    const clearShoppingList = () => {
+        localStorage.clear();
+        window.location.reload();
+        setIsPopupVisible(false);
+    };
+
+    const handleClearConfirm = () => {
+        clearShoppingList();
+        handlePopUpClose();
+    };
+    
     return (
        <>
          <Header />
@@ -135,11 +140,23 @@ const ShoppingList = () => {
                 </div>
             </section>
 
+            <button onClick={handlePopUpOpen} className={styles.clearButton}>
+                    Clear Shopping List
+            </button>
+
+            <Popup
+                isVisible={isPopupVisible}
+                title="Clear Shopping List"
+                content="Are you sure you want to clear your shopping list? This action cannot be undone."
+                onClose={handlePopUpClose}
+                onConfirm={handleClearConfirm}
+            />
+
             {isLoading ? (
                 <p>Loading recipes...</p>
             ) : isError ? (
                 <p>Something went wrong! ☹️</p>
-            ) : (
+            ) : localStorage.length !== 0 ? ( 
                 <section className={styles.cardContainer}>
                     {filteredRecipes.map((recipe) => (
                         <ShoppingListCard 
@@ -149,6 +166,8 @@ const ShoppingList = () => {
                         />
                     ))}
                 </section>
+            ) : (
+                "Add items to your shopping list from our recipes!"
             )}
         </div>
        </>

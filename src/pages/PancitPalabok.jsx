@@ -8,12 +8,75 @@ import { Link } from 'react-router-dom';
 
 import recipesData from '../data/list_recipes.json';
 
+var jsonRecipe = {
+    "recipes": [
+        {
+          "id": "1",
+          "name": "Sinigang",
+          "image": "/images_shoppingList/sinigang.png",
+          "altText": "pot of sinigang soup surrounded by ingredients",
+          "category": "soups",
+          "serves": "4 servings",
+          "ingredients": [
+           
+          ],
+          "equipment": [
+            ["stainless steel strainer"],
+            ["cast iron dutch oven", "6.75 qt"]
+          ],
+          "totalCookTime": { "hours": 1, "minutes": 5 },
+          "prepTime": { "minutes": 20 }
+        },
+        {
+          "id": "2",
+          "name": "Halo Halo",
+          "image": "/images_shoppingList/halohalo.png",
+          "altText": "a serving of Halo halo for two",
+          "category": "desserts",
+          "serves": "4 servings",
+          "ingredients": [
+            
+          ],
+          "equipment": [
+            ["medium saucepan"],
+            ["fine-mesh strainer"],
+            ["paring knife"],
+            ["large saucepan"],
+            ["medium bowl"],
+            ["measuring cups and spoons"],
+            ["cutting board"],
+            ["shave ice machine"]
+          ],
+          "totalCookTime": { "minutes": 20 },
+          "prepTime": { "minutes": 15 }
+        },
+        {
+            "id": "3",
+            "name": "Pancit Palabok",
+            "image": "/images_shoppingList/pancitpalabok.png",
+            "altText": "a plate of pancit palabok",
+            "category": "mains",
+            "serves": "4 servings",
+            "ingredients": [
+              
+            ],
+            "totalCookTime": { "minutes": 20 },
+            "prepTime": { "hours": 1 }
+          }
+      ]};
+
 export default function PancitPalabok() {
     const [checkedIngredients, setCheckedIngredients] = useState({});
 
     const recipe = recipesData.recipes.find((recipe) => recipe.id === "3");
 
-    const handleCheckboxChange = (ingredient) => {
+    const handleCheckboxChange = (ingredient, quantity, specialty) => {
+        if (localStorage.length !== 0) {
+            jsonRecipe = JSON.parse(localStorage.getItem('recipe'));
+        }
+        jsonRecipe.recipes[2].ingredients.push([ingredient, quantity, specialty]);
+        localStorage.setItem('recipe', JSON.stringify(jsonRecipe))
+        window.dispatchEvent(new Event('storage-update'));
         setCheckedIngredients((prev) => ({
             ...prev,
             [ingredient]: !prev[ingredient],
@@ -67,13 +130,13 @@ export default function PancitPalabok() {
                     <h1 className={styles.ingredientsLabel}>Ingredients</h1>
                     <div className={styles.ingredientsList}>
                         <ul className={styles.ingredientsGrid}>
-                            {ingredients.map(([ingredient, quantity], index) => (
+                            {ingredients.map(([ingredient, quantity, specialty], index) => (
                                 <li key={index}>
                                     <label className={styles.customCheckbox}>
                                         <input
                                             type="checkbox"
                                             checked={!!checkedIngredients[ingredient]}
-                                            onChange={() => handleCheckboxChange(ingredient)}
+                                            onChange={() => handleCheckboxChange(ingredient, quantity, specialty)}
                                         />
                                         <span className={styles.checkmark}></span>
                                         {`${ingredient} - ${quantity || ''}`}
